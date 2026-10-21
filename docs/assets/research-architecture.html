@@ -1,0 +1,67 @@
+<!-- V5 / Knowledge-driven Agentic RAG -->
+<section id="phx-agentic" class="phx-section" aria-labelledby="phx-agentic-title">
+ <div class="wrap">
+  <div class="phx-eyebrow">07 / KNOWLEDGE-GROUNDED AGENTIC RESEARCH</div>
+  <h2 id="phx-agentic-title" class="phx-heading">知识不只是被检索。<br><span class="phx-mark">让每一步专业判断都有来处。</span></h2>
+  <p class="phx-intro">知识库是整个 Personal Harness 的长期证据基础。面对简单查询，走低成本混合检索；面对复杂政策研究，Agent 自主拆分问题、回读原文、追踪版本、发现反证，再组织成可复核的分析成果。数据来自哪里、是否适用、哪些结论仍待核实，始终分开表达。</p>
+  <div class="phx-board">
+   <div class="phx-board-top"><div><span class="phx-overline">RESEARCH EXECUTION / INTERACTIVE MODEL</span><b>一项政策问题的三种执行深度</b></div><div class="phx-meta"><i class="phx-statusdot"></i> 三种演示模式 · 同一证据基础</div></div>
+   <div class="phx-content">
+    <div class="phx-switchrow"><div role="tablist" aria-label="RAG 执行策略" class="phx-tabs" id="phx-rag-tabs"><button type="button" role="tab" aria-selected="true" class="phx-tab is-active" data-rag="quick">01 · Hybrid RAG</button><button type="button" role="tab" aria-selected="false" class="phx-tab" data-rag="agentic">02 · Agentic RAG</button><button type="button" role="tab" aria-selected="false" class="phx-tab" data-rag="professional">03 · 专业成果流程</button></div><p>点击模式，观察任务分解和结果形态</p></div>
+    <div class="phx-two">
+     <div class="phx-card tint" aria-live="polite"><span class="phx-label" id="phx-rag-kicker">KNOWLEDGE / L1</span><h3 id="phx-rag-name">找到政策原文，再给出带出处的回答</h3><p id="phx-rag-desc">适合文号、名称、条款定位及范围明确的事实性问答，减少不必要的多轮模型调用。</p><div class="phx-stage-track" id="phx-rag-stages"></div><div class="phx-callout" id="phx-rag-boundary"></div></div>
+     <div class="phx-card"><span class="phx-label">EXAMPLE / 待研究的问题</span><h3 id="phx-rag-question">某项土地政策的第几条涉及适用条件？</h3><ul class="phx-list" id="phx-rag-outputs"></ul><div class="phx-kvs" style="margin-top:19px"><div class="phx-kv"><strong>研究者做什么</strong><span>审核政策效力、项目事实和结论边界</span></div><div class="phx-kv"><strong>Agent 做什么</strong><span>组织检索与分析，不自行签署审批结论</span></div></div></div>
+    </div>
+   </div>
+  </div>
+  <div style="margin-top:18px" class="phx-two equal">
+   <div class="phx-card"><span class="phx-label">KNOWLEDGE / 数据权威</span><h3>一个正式 INDEX，三条取证入口</h3><div class="phx-flowbox" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:19px"><div><small>01 / CONTROLLED</small><strong>正式知识索引</strong><span>Source → OCR/解析 → FTS5/BM25 + BGE-M3 → Rerank</span></div><div><small>02 / TEMPORARY</small><strong>临时材料探索</strong><span>未入库文件夹 / 原件读取 / 原始来源记录</span></div><div><small>03 / EXTERNAL</small><strong>公开网络检索</strong><span>DeepSeek Search/Fetch 与 Exa 作为可替换候选</span></div></div><p style="margin-top:17px">三路结果可以进入同一任务证据池，但不能擅自修改正式 INDEX。Wiki 负责组织已形成的知识，不能代替政策原文或专业效力判断。</p></div>
+   <div class="phx-card"><span class="phx-label">EVIDENCE / 证据晋级路径</span><h3>搜索结果不等于结论</h3><div class="phx-evidence" style="margin:18px 0"><div><strong>SearchHit</strong><span>网页线索和摘要</span></div><div><strong>FetchSnapshot</strong><span>抓取内容、时间与来源</span></div><div><strong>EvidenceItem</strong><span>原文定位与核验记录</span></div><div><strong>EvidencePacket</strong><span>冻结用于当次研究的证据</span></div><div><strong>Claim</strong><span>分清原文、推断、建议和待核项</span></div></div><p>政策法律效力、地域与项目适用性由 Policy 领域按时间和事实核验；检索相关性分数不能替代这些判断。</p></div>
+  </div>
+ </div>
+</section>
+<!-- V5 / Code-driven workflow and web retrieval -->
+<section id="phx-workflows" class="phx-section" aria-labelledby="phx-flow-title">
+ <div class="wrap">
+  <div class="phx-eyebrow">08 / INTELLIGENT ORCHESTRATION</div>
+  <h2 id="phx-flow-title" class="phx-heading">研究路径可以动态生成，<br><span class="phx-mark">执行权限不能随意生成。</span></h2>
+  <p class="phx-intro">Agent Loop 负责探索，LangGraph / 有界 Runner 负责有状态执行；遇到天然可拆分的任务，可借鉴 ZCode 的 TypeScript Workflow 机制编排子 Agent。所有 Runner 都服从同一个 Task Core 的计划、授权、预算、执行身份与恢复规则，避免双 Agent Loop 同时驱动同一次任务。</p>
+  <div class="phx-board">
+   <div class="phx-board-top"><div><span class="phx-overline">PARALLEL WORKFLOW / ILLUSTRATIVE DEMO</span><b>同一业务任务，多 Agent 并行研究再汇总</b></div><div class="phx-meta"><i class="phx-statusdot"></i> 交互式流程模型</div></div>
+   <div class="phx-content">
+    <div class="phx-switchrow"><div class="phx-tabs" role="tablist" aria-label="动态工作流案例" id="phx-flow-tabs"><button type="button" role="tab" aria-selected="true" class="phx-tab is-active" data-flow="policy">政策沿革与适用性</button><button type="button" role="tab" aria-selected="false" class="phx-tab" data-flow="planning">村庄规划联动</button><button type="button" role="tab" aria-selected="false" class="phx-tab" data-flow="audit">代码模块并行审查</button></div><p>切换查看子任务与交付汇总变化</p></div>
+    <div class="phx-two">
+     <div class="phx-card tint"><span class="phx-label" id="phx-flow-profile">POLICY / PARALLEL STUDY</span><h3 id="phx-flow-name">一份研究目标，分成三个可复核专题</h3><div style="text-align:center;padding:10px 0 0"><span class="phx-pill">Task Core 接受任务、授权与预算</span><div style="color:#b98f4c;font-size:22px;line-height:1.5">↓</div><span class="phx-pill">Runner 生成受控的子任务 DAG</span><div style="color:#b98f4c;font-size:22px;line-height:1.5">↓</div></div><div class="phx-fanout" id="phx-fanout"></div><div style="text-align:center;color:#b98f4c;font-size:22px;margin:4px">↓</div><div class="phx-merge" id="phx-merge">证据合并 → 冲突分析 → 结构化报告</div><div class="phx-callout" id="phx-flow-constraint"></div></div>
+     <div class="phx-card"><span class="phx-label">TASK GOVERNANCE / 任务治理</span><h3>动态脚本是执行提案，不是另一套任务权威</h3><ul class="phx-list"><li><b>生成：</b>Agent 根据本次目标提出流程和类型化输入输出。</li><li><b>编译校验：</b>检查结构、循环、能力、依赖、预算和副作用。</li><li><b>授权执行：</b>Task Core 接受计划，Runner 才能创建获准的 attempt。</li><li><b>修订：</b>PlanPatch 受控生效，历史计划与运行回执保留。</li><li><b>增量复用：</b>仅在输入、版本、身份和副作用条件允许时复用结果。</li></ul><pre class="phx-code" id="phx-code-sample"></pre></div>
+    </div>
+    <div class="phx-workflow-note" style="margin-top:17px"><b style="font-size:12px;color:#285263">Task Core ≠ Runner ≠ Subagent</b><span>失败、取消、超时或执行结果未知时先对账；重放缓存不等于允许重复修改外部文件。</span></div>
+   </div>
+  </div>
+  <div class="phx-two equal" style="margin-top:18px">
+   <div class="phx-card"><span class="phx-label">WEB RETRIEVAL / REPLACEABLE PROVIDERS</span><h3>公网搜索是工具通道，不是第二知识底座</h3><div class="phx-provider-list"><div class="phx-provider"><b>DeepSeek Search / Fetch</b><small>候选：网页搜索、网址定位、正文读取与研究材料获取。</small><span class="phx-provider-status">待真实评测</span></div><div class="phx-provider"><b>Exa Search / Contents</b><small>候选：语义发现、内容获取，与中文政策官方来源检索对照。</small><span class="phx-provider-status">对照评测</span></div></div><div class="phx-flowbox" style="grid-template-columns:repeat(3,minmax(0,1fr))"><div><small>SEARCH</small><strong>查找线索</strong><span>查询、URL、排名、摘要</span></div><div><small>FETCH</small><strong>回读网页</strong><span>正文、获取时点、失败范围</span></div><div><small>VERIFY</small><strong>核查入证</strong><span>官方来源、原文、效力与适用</span></div></div></div>
+   <div class="phx-card"><span class="phx-label">MODEL ROUTING / RESPONSIBLE COST</span><h3>把成本花在必要的研究深度上</h3><div class="phx-router" id="phx-router"><button type="button" class="phx-choice is-active" data-route="l1"><strong>L1 · 简单问答</strong><span>文号和单条原文定位</span></button><button type="button" class="phx-choice" data-route="l2"><strong>L2 · 多轮研究</strong><span>政策沿革、冲突和反证</span></button><button type="button" class="phx-choice" data-route="l3"><strong>L3 · 专业交付</strong><span>跨领域、报表和可审查成果</span></button></div><div class="phx-route-result" id="phx-route-result" aria-live="polite"><strong>Hybrid RAG</strong> 复用正式 INDEX 的混合检索；必要时精排并回读原文，不自动启用多 Agent。</div><p class="phx-smallprint">成本、响应时间和检索质量需经同一组真实任务测量。展示页不伪造 DeepSeek / Exa 的召回率、时延和费用对比结果。</p></div>
+  </div>
+ </div>
+</section>
+<!-- V5 / Multi-audience interactive architecture diagrams -->
+<section id="phx-atlas" class="phx-section phx-architecture" aria-labelledby="phx-atlas-title">
+ <div class="wrap">
+  <div class="phx-eyebrow">09 / MULTI-PERSPECTIVE SYSTEM ATLAS</div>
+  <h2 id="phx-atlas-title" class="phx-heading">同一套体系，<br><span style="color:#eac17b">从四种视角读懂它。</span></h2>
+  <p class="phx-intro">面向客户，它是一个贯穿研究与交付的工作平台；面向架构师，它是有权威边界的控制与证据系统；面向开发者，它由稳定语义契约与可替换 Runner 构成；面向专业人员，它是一组把政策、项目、空间、设计与成果贯通的工作链。</p>
+  <div class="phx-board">
+   <div class="phx-board-top"><div><span class="phx-overline">CLICKABLE SVG TOPOLOGY / 交互架构图</span><b id="phx-diagram-title">对使用者：从一个问题到可继续工作的成果</b></div><div class="phx-meta">点击图中的节点，查看职责与边界</div></div>
+   <div class="phx-content" style="padding-bottom:0"><div class="phx-tabs" id="phx-diagram-tabs" role="tablist" aria-label="架构图阅读视角"><button type="button" class="phx-tab is-active" role="tab" aria-selected="true" data-perspective="customer">01 · 使用者 / 客户</button><button type="button" class="phx-tab" role="tab" aria-selected="false" data-perspective="architect">02 · 系统架构师</button><button type="button" class="phx-tab" role="tab" aria-selected="false" data-perspective="developer">03 · 开发工程师</button><button type="button" class="phx-tab" role="tab" aria-selected="false" data-perspective="specialist">04 · 专业负责人</button></div></div>
+   <div class="phx-arch-layout">
+    <div class="phx-svgframe"><div class="phx-pan-hint" aria-hidden="true">⇆ 横向滑动浏览完整架构图</div><svg id="phx-arch-svg" class="phx-arch-svg" viewBox="0 0 1140 630" role="img" aria-label="可点击的 Personal Harness 多视角架构图"><defs><marker id="phx-edge-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#91b5b4"/></marker><marker id="phx-edge-active" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#eac079"/></marker></defs><g id="phx-arch-edges"></g><g id="phx-arch-nodes"></g></svg></div>
+    <aside class="phx-arch-detail" aria-live="polite"><div><span class="phx-overline">NODE INSPECTOR / 节点详解</span><h3 id="phx-detail-name">任务与需求</h3><p id="phx-detail-desc">从工作目标开始，统一界定输入、范围、用途和预期成果。</p></div><div class="phx-mini" id="phx-detail-rule">每一条工作链都以可复查的来源、执行记录与成果版本为基础。</div></aside>
+   </div>
+   <div class="phx-arch-caption" id="phx-diagram-caption">面向使用者：无需理解模型和工具差异，只需理解每一步成果来自哪里，以及哪些步骤需要自己确认。</div>
+  </div>
+  <div class="phx-grid3" style="margin-top:19px">
+   <div class="phx-card" style="background:#204151;border-color:#3a6370;color:#fff"><span class="phx-label">CONTROL PLANE</span><h3>Task Core 掌握许可</h3><p style="color:#c5d5d6">计划接受、attempt、lease、fence、取消、预算、成果接受，不因换 Runner 或桌面客户端而丢失。</p></div>
+   <div class="phx-card" style="background:#204151;border-color:#3a6370;color:#fff"><span class="phx-label">EXECUTION PLANE</span><h3>Runner 调度真实能力</h3><p style="color:#c5d5d6">LangGraph / Agent Loop / 可选动态工作流调用模型、MCP、ArcPy 和专业软件桥，真实回执决定执行状态。</p></div>
+   <div class="phx-card" style="background:#204151;border-color:#3a6370;color:#fff"><span class="phx-label">EVIDENCE PLANE</span><h3>Source 和领域对象保存事实</h3><p style="color:#c5d5d6">正式 INDEX 只有一个受控写入口；EvidencePacket、政策 Claim、GeoResult 和 DesignResult 各由相应责任域核验。</p></div>
+  </div>
+ </div>
+</section>

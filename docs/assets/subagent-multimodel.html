@@ -1,0 +1,25 @@
+<section class="mx7-section" id="mx7-orchestrator" aria-labelledby="mx7-title">
+ <div class="wrap">
+  <div class="mx7-eyebrow">AGENT ORCHESTRATION / ROLE × MODEL × TOOLS</div>
+  <h2 class="mx7-title" id="mx7-title">不只调用一个大模型。<br><em>让不同专业子 Agent，匹配不同能力的模型。</em></h2>
+  <p class="mx7-lead">在统一 Personal Harness 中，主 Agent 负责理解目标、提出任务分解；Task Core 授予执行许可，有界 Runner 组织子 Agent 的并行、依赖与汇总。每个子 Agent 可以按角色选择不同 LLM / VLM，Visual 再调用 ComfyUI 或闭源图像模型；专业计算仍由可信工具执行。模型、工具和执行角色分别登记，成果共享同一任务与证据基线。</p>
+  <div class="mx7-panel">
+   <div class="mx7-header"><div><span class="mx7-kicker">DYNAMIC MULTI-AGENT TOPOLOGY</span><h3>业务场景切换 · 子代理编排 · 模型绑定</h3></div><span class="mx7-sandbox-tag">可交互产品概念演示 · 不执行真实模型调用</span></div>
+   <div class="mx7-toolbar"><div role="tablist" class="mx7-tabs" aria-label="多 Agent 编排业务场景">
+    <button type="button" data-mx7-case="policy" class="mx7-active" aria-selected="true" role="tab">政策研究</button>
+    <button type="button" data-mx7-case="planning" aria-selected="false" role="tab">村庄规划</button>
+    <button type="button" data-mx7-case="visual" aria-selected="false" role="tab">城市设计与生图</button>
+    <button type="button" data-mx7-case="audit" aria-selected="false" role="tab">并行代码审查</button>
+   </div><label class="mx7-profile">模型路由策略 <select id="mx7-profile"><option value="balanced">均衡分配</option><option value="local">本地优先</option><option value="quality">深度研究优先</option></select></label></div>
+   <div class="mx7-scene-head"><div><span id="mx7-scene-tag">POLICY / AGENTIC RESEARCH</span><h4 id="mx7-scene-name"></h4><p id="mx7-scene-intro"></p></div><div class="mx7-stats"><div><strong id="mx7-agent-count">4</strong><span>专业子 Agent</span></div><div><strong id="mx7-model-count">3</strong><span>不同模型配置</span></div><div><strong>1</strong><span>统一 Task Core</span></div></div></div>
+   <div class="mx7-govline"><div><b>CONTROL / Task Core</b><span>计划接受 · 预算与授权 · attempt / lease / fence · 取消与恢复</span></div><div><b>RUNNER / Agent Loop + Workflow</b><span>主 Agent 规划 · 子 Agent 扇出 · 并行/依赖 · 结构化汇总</span></div></div>
+   <div class="mx7-svg-area"><span class="mx7-canvas-label">CLICKABLE TOPOLOGY / 点击节点查看角色与模型职责</span><div class="mx7-svg-scroll"><svg id="mx7-topology" role="group" aria-label="主 Agent 分解任务、四个子 Agent 分工执行、独立核查和成果交付关系图" viewBox="0 0 1140 420"></svg></div></div>
+   <div class="mx7-configuration">
+    <div class="mx7-roles-pane"><div class="mx7-pane-title"><div><small>MODEL ROUTER / SUBAGENT BINDINGS</small><h4>每个子 Agent 可配置不同模型</h4></div><span>更改下方模型，架构图同步更新</span></div><div id="mx7-role-grid" class="mx7-role-grid" aria-label="子 Agent 模型分配表"></div></div>
+    <aside class="mx7-inspector" aria-live="polite"><small>ROLE INSPECTOR / 角色及职责</small><h4 id="mx7-inspect-name">主 Agent</h4><p id="mx7-inspect-desc"></p><div class="mx7-inspect-block"><span>绑定模型 / 工具路线</span><b id="mx7-inspect-model"></b></div><div class="mx7-inspect-block"><span>输入与输出约束</span><p id="mx7-inspect-contract"></p></div><div class="mx7-inspect-block"><span>执行边界</span><p id="mx7-inspect-guard"></p></div></aside>
+   </div>
+   <div class="mx7-run-board"><div class="mx7-run-head"><div><small>EXECUTION TRACE / STAGE VIEW</small><h4>观察任务如何从拆分到并行汇总</h4></div><div class="mx7-stages" role="group" aria-label="模拟执行阶段"><button type="button" data-mx7-stage="plan" class="mx7-active">01 · 规划授权</button><button type="button" data-mx7-stage="fanout">02 · 并行执行</button><button type="button" data-mx7-stage="review">03 · 汇总 / QC</button></div></div><div id="mx7-trace" class="mx7-trace" aria-live="polite"></div></div>
+   <div class="mx7-footgrid"><article><b>模型的职责是思考和理解</b><p>LLM 用于规划、检索策略、文本和分析；VLM 用于图面理解；Image Model 用于候选图生成。模型身份、版本、上下文和调用参数由 Model Router / Provider Adapter 记录。</p></article><article><b>工具的职责是真实执行</b><p>Knowledge MCP、Geo 开源 GIS Worker / ArcGIS Pro Bridge、CAD / Rhino / GH、ComfyUI 与外部 API 是独立能力。视觉模型生成的内容不冒充空间事实或工程数值。</p></article><article><b>审查和业务接受不是一回事</b><p>Reviewer 可独立核对冻结证据；Task Core 决定业务接受。多模型多数意见不能代替政策原文、GIS 回执、原生文件回读或必要人工审定。</p></article></div>
+  </div>
+ </div>
+</section>

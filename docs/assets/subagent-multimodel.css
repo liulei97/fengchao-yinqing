@@ -1,0 +1,76 @@
+/* v7 isolated multi-agent orchestration showcase */
+.mx7-section{padding:96px 0 90px;background:#112e3b;color:#edf5f4;overflow:hidden;position:relative}
+.mx7-section *{box-sizing:border-box}
+.mx7-section:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.2;background-image:linear-gradient(90deg,#87b2bd25 1px,transparent 1px),linear-gradient(#87b2bd25 1px,transparent 1px);background-size:66px 66px}
+.mx7-section .wrap{position:relative;z-index:1}
+.mx7-eyebrow,.mx7-kicker{font-size:10px;letter-spacing:.16em;font-weight:800;color:#a5d3dc}
+.mx7-title{font-size:clamp(28px,3.8vw,46px);line-height:1.48;color:#f6f9f7;margin:13px 0 16px;font-weight:650;letter-spacing:-.035em}
+.mx7-title em{font-style:normal;color:#f3bf6d}
+.mx7-lead{max-width:1000px;color:#b4c9cd;font-size:14px;line-height:2.05;margin:0 0 30px}
+.mx7-panel{border-radius:22px;overflow:hidden;background:#193c4c;border:1px solid #60849360;box-shadow:0 28px 70px #0618255a}
+.mx7-header{padding:23px 28px;border-bottom:1px solid #60849360;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#214858}
+.mx7-header h3{font-size:20px;color:#fff;margin:4px 0 0;font-weight:620}
+.mx7-sandbox-tag{font-size:10px;color:#acc7cc;background:#153444;border-radius:20px;padding:7px 12px}
+.mx7-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:19px 24px;border-bottom:1px solid #60849340;flex-wrap:wrap}
+.mx7-tabs,.mx7-stages{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mx7-tabs button,.mx7-stages button{border:1px solid #688d9b68;border-radius:10px;color:#cce0e4;background:#254958;padding:10px 16px;font:inherit;font-size:12px;line-height:1.5;cursor:pointer;transition:background .18s,border-color .18s}
+.mx7-tabs button:hover,.mx7-stages button:hover{border-color:#efba67}
+.mx7-tabs button.mx7-active,.mx7-stages button.mx7-active{background:#f0bd69;color:#193444;border-color:#f0bd69;font-weight:700}
+.mx7-profile{color:#b7d0d5;font-size:12px;display:flex;align-items:center;gap:9px}
+.mx7-profile select{font:inherit;font-size:12px;background:#143140;color:#f2f6f2;border:1px solid #5f8391;border-radius:9px;padding:9px 13px;max-width:100%}
+.mx7-scene-head{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:26px 27px 18px}
+.mx7-scene-head>div:first-child{min-width:0;max-width:790px}
+.mx7-scene-head span{font-size:10px;letter-spacing:.11em;color:#b2cbd2}
+.mx7-scene-head h4{font-size:21px;color:#fff;margin:4px 0 8px}
+.mx7-scene-head p{font-size:12px;color:#bacdd2;line-height:1.9;margin:0}
+.mx7-stats{display:flex;gap:9px}
+.mx7-stats>div{text-align:center;min-width:103px;border:1px solid #5e85915a;border-radius:12px;background:#224858;padding:11px 7px;display:flex;flex-direction:column;gap:1px}
+.mx7-stats strong{color:#f5c073;font-size:23px;line-height:1.3;font-variant-numeric:tabular-nums}
+.mx7-stats span{font-size:10px;letter-spacing:0}
+.mx7-govline{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:0 25px 18px}
+.mx7-govline>div{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid #9ebbb950;border-radius:10px;padding:12px 14px;background:#123441}
+.mx7-govline b{font-size:11px;color:#e3bb7a;white-space:nowrap}
+.mx7-govline span{font-size:10px;color:#bfd1d5;line-height:1.6}
+.mx7-svg-area{border-top:1px solid #63849344;border-bottom:1px solid #63849344;background:radial-gradient(circle at 51% 44%,#2a5b67,#143746 83%);padding:17px 20px 14px}
+.mx7-canvas-label{font-size:9px;color:#abced4;letter-spacing:.12em;font-weight:700;margin-left:5px}
+.mx7-svg-scroll{max-width:100%;overflow-x:auto}
+#mx7-topology{display:block;min-width:790px;width:100%;height:auto;max-height:480px;margin:5px auto 0}
+#mx7-topology .mx7-svg-node{cursor:pointer;outline:0}
+#mx7-topology .mx7-svg-node:focus-visible rect,#mx7-topology .mx7-svg-node.mx7-focus rect{stroke:#ffca77;stroke-width:2.6}
+#mx7-topology text{pointer-events:none}
+.mx7-configuration{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(240px,.85fr);gap:15px;padding:20px 24px}
+.mx7-roles-pane,.mx7-inspector{border:1px solid #6389985c;border-radius:15px;background:#153545;padding:19px 18px;min-width:0}
+.mx7-pane-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.mx7-pane-title small,.mx7-inspector>small,.mx7-run-head small{font-size:10px;color:#a3cdd5;letter-spacing:.10em;font-weight:700}
+.mx7-pane-title h4,.mx7-inspector h4,.mx7-run-head h4{font-size:17px;color:#f7f9f5;margin:5px 0 0;font-weight:600}
+.mx7-pane-title>span{font-size:10px;color:#9abac5}
+.mx7-role-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mx7-role-card{border:1px solid #62899769;background:#214555;border-radius:11px;padding:12px 13px;min-width:0;cursor:pointer}
+.mx7-role-card.mx7-selected{border-color:#f3ba68;background:#2b4d58}
+.mx7-role-card .mx7-card-head{display:flex;justify-content:space-between;align-items:center;gap:5px;margin-bottom:4px}
+.mx7-role-card .mx7-card-head b{font-size:12px;color:#fff}
+.mx7-role-card .mx7-card-head span{font-size:9px;color:#f0bf7c}
+.mx7-role-card p{font-size:10px;line-height:1.7;color:#b2cbd0;margin:3px 0 10px}
+.mx7-role-card label{display:block;font-size:10px;color:#b9d2d6}
+.mx7-role-card select{display:block;width:100%;margin-top:5px;padding:8px 7px;border:1px solid #7299a2;border-radius:7px;background:#102f3e;color:#f3f7f6;font-size:11px;min-width:0;font-family:inherit}
+.mx7-inspector h4{color:#f1c071;font-size:21px;margin-top:12px}
+.mx7-inspector>p{margin:7px 0 13px;color:#c7d7dc;font-size:12px;line-height:1.9;min-height:60px}
+.mx7-inspect-block{border-top:1px solid #668a9661;padding-top:11px;margin-top:10px}
+.mx7-inspect-block span{display:block;font-size:10px;color:#9cbdc6;margin-bottom:4px}
+.mx7-inspect-block b{font-size:12px;color:#f3c98a}
+.mx7-inspect-block p{font-size:11px;color:#b7cdd1;line-height:1.75;margin:2px 0 0}
+.mx7-run-board{margin:0 24px 22px;border:1px solid #65869561;border-radius:14px;background:#173846;padding:17px 18px}
+.mx7-run-head{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.mx7-run-head h4{font-size:15px}
+.mx7-stages button{font-size:11px;padding:8px 11px}
+.mx7-trace{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:16px}
+.mx7-trace article{border:1px solid #6d919b63;border-radius:10px;background:#214957;padding:11px 12px}
+.mx7-trace article b{display:block;font-size:12px;color:#f0bf76}
+.mx7-trace article p{margin:4px 0 0;color:#c1d3d8;font-size:11px;line-height:1.8}
+.mx7-footgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0 24px 23px}
+.mx7-footgrid article{border-top:1px solid #698b9a74;padding:14px 10px 0 1px}
+.mx7-footgrid b{font-size:12px;color:#f0c17f}
+.mx7-footgrid p{font-size:11px;color:#a8c0c8;line-height:1.8;margin:6px 0 0}
+@media(max-width:1040px){.mx7-configuration{grid-template-columns:1fr}.mx7-scene-head{align-items:start;flex-direction:column}.mx7-stats{width:100%}.mx7-stats>div{flex:1}.mx7-govline{grid-template-columns:1fr}}
+@media(max-width:760px){.mx7-section{padding:65px 0}.mx7-header{padding:18px}.mx7-header h3{font-size:16px}.mx7-sandbox-tag{display:none}.mx7-toolbar{padding:14px}.mx7-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.mx7-tabs button{padding:9px 6px}.mx7-profile{width:100%;justify-content:space-between}.mx7-scene-head{padding:18px}.mx7-scene-head h4{font-size:18px}.mx7-govline{margin:0 15px 15px}.mx7-govline>div{display:block}.mx7-govline span{display:block;margin-top:3px}.mx7-svg-area{padding:14px 8px}.mx7-configuration{padding:14px}.mx7-role-grid{grid-template-columns:1fr}.mx7-pane-title{align-items:start;flex-direction:column}.mx7-run-board{margin:0 14px 18px}.mx7-stages{display:grid;grid-template-columns:1fr 1fr 1fr;width:100%}.mx7-stages button{font-size:10px;padding:7px 2px}.mx7-trace{grid-template-columns:1fr}.mx7-footgrid{padding:0 15px 18px;grid-template-columns:1fr}.mx7-stats>div{min-width:0}.mx7-stats strong{font-size:19px}}
+@media print{.mx7-svg-scroll{overflow:visible}#mx7-topology{min-width:0}}
