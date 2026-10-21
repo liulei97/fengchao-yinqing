@@ -10,6 +10,22 @@
 <meta content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/>
 <title>蜂巢引擎｜第八版 Personal Harness · 多模型编排与富组件成果引擎</title>
 <style>
+
+/* v8 desktop concept jump: self-contained and intentionally scoped */
+.hive-v8-desktop-entry{display:grid;grid-template-columns:64px minmax(0,1fr) auto;align-items:center;gap:22px;padding:22px 26px;margin:7px 0 23px;border-radius:16px;background:linear-gradient(117deg,#183544,#254c57 72%,#325c62);box-shadow:0 12px 32px rgba(24,52,68,.11);color:#eff5f3;border:1px solid #3e6872}
+.hive-desktop-entry-symbol{width:58px;height:58px;display:grid;place-items:center;border-radius:14px;border:1px solid #c3a16455;background:#ecc27b18;color:#f4c97f}
+.hive-desktop-entry-symbol svg{width:29px;height:29px}
+.hive-desktop-entry-copy{min-width:0}
+.hive-desktop-entry-label{display:block;font-size:10px;letter-spacing:.11em;color:#a9c8ca;font-weight:700}
+.hive-v8-desktop-entry h3{font-size:18px;line-height:1.5;margin:3px 0 5px;color:#fff;font-weight:720}
+.hive-v8-desktop-entry p{font-size:12px;line-height:1.85;color:#d0dee0;margin:0;max-width:660px}
+.hive-desktop-entry-cta{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:11px;border:1px solid #e9ba72;border-radius:8px;background:#f2be73;color:#203746;font-weight:750;font-size:12px;padding:12px 16px;transition:transform .16s ease,background .16s ease}
+.hive-desktop-entry-cta:hover,.hive-desktop-entry-cta:focus-visible{background:#ffd18d;transform:translateY(-2px)}
+.hive-desktop-mobilelink{color:#bb8539!important;font-weight:750}
+@media(max-width:900px){.hive-v8-desktop-entry{grid-template-columns:54px minmax(0,1fr);gap:14px}.hive-desktop-entry-symbol{width:52px;height:52px}.hive-desktop-entry-cta{grid-column:2;justify-self:start}}
+@media(max-width:560px){.hive-v8-desktop-entry{grid-template-columns:minmax(0,1fr);padding:20px;gap:10px}.hive-desktop-entry-symbol{width:44px;height:44px;border-radius:10px}.hive-desktop-entry-symbol svg{width:24px;height:24px}.hive-v8-desktop-entry h3{font-size:16px}.hive-v8-desktop-entry p{font-size:11px}.hive-desktop-entry-cta{grid-column:1;justify-self:stretch;margin-top:7px}}
+@media print{.hive-desktop-entry-cta{display:none!important}}
+
 :root{--bg:#f8f8f5;--paper:#fff;--ink:#213b4b;--deep:#172e3c;--text:#42535e;--muted:#7e8b92;--gold:#c78b2c;--honey:#e9b24b;--pale:#fbf2df;--line:#e2e7e7;--soft:#f0f3f2;--teal:#537c72;--sans:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;--serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}button,a,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button,input{font-family:inherit}svg{display:block}button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--gold);outline-offset:5px}::selection{background:#f0d49e;color:var(--ink)}[hidden]{display:none!important}.wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}.skip{position:fixed;left:20px;top:-70px;background:var(--ink);color:white;padding:10px 18px;z-index:100}.skip:focus{top:10px}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.symbol-bank{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}.gold{color:var(--gold)}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 /* Brand and navigation */
@@ -835,10 +851,10 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 </defs></svg>
 <header class="topbar"><div class="wrap nav">
 <a aria-label="蜂巢引擎，返回页首" class="brand" href="#top"><svg aria-hidden="true" class="brand-icon" viewbox="145 270 400 420"><use href="#brand-raster"></use></svg><span class="brand-name">蜂巢引擎</span></a>
-<nav aria-label="主导航" class="nav-links"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
-<a class="btn small" href="#hvx-console">探索产品 <span aria-hidden="true">↗</span></a>
+<nav aria-label="主导航" class="nav-links"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#exec-router">执行路由</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
+<a class="btn small hive-desktop-navlink" href="HiveEngine_Desktop_Concept_v0.4.html" title="打开蜂巢引擎 v0.4 桌面概念原型（离线 HTML）">桌面原型 <span aria-hidden="true">↗</span></a>
 <button aria-controls="mobile-menu" aria-expanded="false" aria-label="展开导航" class="nav-menu-button" id="menu-toggle" type="button"><svg class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
-</div><nav aria-label="移动端导航" class="mobile-menu" hidden="" id="mobile-menu"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
+</div><nav aria-label="移动端导航" class="mobile-menu" hidden="" id="mobile-menu"><a class="hive-desktop-mobilelink" href="HiveEngine_Desktop_Concept_v0.4.html">体验桌面原型 ↗</a><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#exec-router">执行路由</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
 </header>
 <main id="main">
 <section aria-labelledby="hero-title" class="hero">
@@ -849,7 +865,7 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 <p class="subtitle">Personal Harness · 蜂巢引擎</p>
 <h1 id="hero-title">把专业工作，<br/>组织成一个<em>完整系统。</em></h1>
 <p class="hero-lead">从 Agentic RAG、多模型 Subagent 编排、Geo 与 Visual 专业执行，到可交互富文档、证据化成果和完整离线交付。<br/>一个项目空间，联通知识、工具、模型与成果。</p>
-<div class="hero-actions"><a class="btn" href="#hvx-console">进入一体化工作台 ↗</a><a class="btn secondary" href="#hvx-world">查看产品全景 ↓</a><a class="btn secondary" href="#urban-lab">体验城市设计 ↘</a><a class="btn secondary" href="#phx-agentic">探索 Agentic RAG <span aria-hidden="true">↗</span></a></div>
+<div class="hero-actions"><a class="btn" href="#hvx-console">进入一体化工作台 ↗</a><a class="btn secondary hive-desktop-hero" href="HiveEngine_Desktop_Concept_v0.4.html" title="进入 v0.4 桌面概念原型">体验桌面原型 <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#urban-lab">体验城市设计 ↘</a><a class="btn secondary" href="#phx-agentic">探索 Agentic RAG <span aria-hidden="true">↗</span></a></div>
 <div class="urban-hero-callout">ALL-IN-ONE PROJECT WORKSPACE <span>知识与政策</span><span>WebGIS × AI 画布</span><span>设计建模 × 智能交付</span></div>
 </div>
 <div aria-label="任务驱动流程的概念图：组织资料、分析条件、调用专业工具、形成可编辑成果" class="hero-system">
@@ -915,6 +931,15 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 </section>
 <section aria-labelledby="hvx-console-title" class="hvx-section hvx-console-section" id="hvx-console">
 <div class="wrap"><div class="hvx-section-top"><div><span class="hvx-overline">01 / UNIFIED PROFESSIONAL WORKSPACE</span><h2 id="hvx-console-title">一个项目空间，<br/><em>打开完整的专业工作台。</em></h2><p>围绕同一个项目，衔接工程咨询、国土空间规划、建筑设计、知识与政策、WebGIS、AI 画布及最终交付。专业工作台共享材料、证据、受控计算和可编辑成果。</p></div><div class="hvx-header-mark">HIVE / WORKSPACE<br/><strong>统一对象 · 共享上下文</strong></div></div>
+<div class="hive-v8-desktop-entry" role="region" aria-labelledby="hive-desktop-entry-title">
+  <div class="hive-desktop-entry-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="14" rx="2.1"/><path d="M8 21h8M12 17.5V21"/></svg></div>
+  <div class="hive-desktop-entry-copy">
+    <span class="hive-desktop-entry-label">DESKTOP CONCEPT · v0.4 / 概念交互原型</span>
+    <h3 id="hive-desktop-entry-title">从产品全景，进入蜂巢引擎桌面工作台。</h3>
+    <p>体验 AI 对话、WebGIS 二维与三维、Agentic RAG、多模型 Subagent 编排、Visual 生图、Delivery Word / PPT / Excel 等工作区。此为离线前端概念演示，不会连接真实模型或 GIS 服务。</p>
+  </div>
+  <a href="HiveEngine_Desktop_Concept_v0.4.html" class="hive-desktop-entry-cta" aria-label="打开蜂巢引擎 v0.4 桌面概念原型页面">打开桌面概念原型 <span aria-hidden="true">↗</span></a>
+</div>
 <div aria-label="可交互的 Personal Harness 产品工作台" class="hvx-app">
 <div class="hvx-appbar"><div class="hvx-appdots"><i></i><i></i><i></i></div><span>蜂巢引擎 <b>/</b> 项目工作空间 <b>/</b> 滨水城市更新综合研究</span><span class="hvx-appmeta">PROJECT URBAN–017 <i></i> AUTO-SAVED DEMO</span></div>
 <div class="hvx-appbody"><aside class="hvx-appside"><div class="hvx-side-title">PROJECT SPACE <small>城市设计综合研究</small></div><div class="hvx-side-label">专业工作台</div>
@@ -1161,6 +1186,96 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
    <div class="mx7-footgrid"><article><b>模型的职责是思考和理解</b><p>LLM 用于规划、检索策略、文本和分析；VLM 用于图面理解；Image Model 用于候选图生成。模型身份、版本、上下文和调用参数由 Model Router / Provider Adapter 记录。</p></article><article><b>工具的职责是真实执行</b><p>Knowledge MCP、Geo 开源 GIS Worker / ArcGIS Pro Bridge、CAD / Rhino / GH、ComfyUI 与外部 API 是独立能力。视觉模型生成的内容不冒充空间事实或工程数值。</p></article><article><b>审查和业务接受不是一回事</b><p>Reviewer 可独立核对冻结证据；Task Core 决定业务接受。多模型多数意见不能代替政策原文、GIS 回执、原生文件回读或必要人工审定。</p></article></div>
   </div>
  </div>
+</section>
+
+<style id="exec-router-style">
+.exec-section{padding:42px 0 28px;background:linear-gradient(180deg,#f4f6f8 0%,#eef2f5 100%);color:#14202b}.exec-wrap{max-width:1180px;margin:0 auto;padding:0 20px}.exec-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.14em;color:#4b6475;text-transform:uppercase}.exec-eyebrow:before{content:"";width:8px;height:8px;border-radius:999px;background:#d9aa54;display:inline-block}.exec-title{margin:14px 0 8px;font-size:clamp(28px,4vw,46px);line-height:1.14;color:#102436}.exec-title em{font-style:normal;color:#bc8a34}.exec-lead{max-width:920px;color:#3e5464;line-height:1.8;margin:0 0 22px}.exec-panel{background:#fff;border:1px solid #d7e1e8;border-radius:24px;box-shadow:0 18px 40px rgba(30,57,78,.08);overflow:hidden}.exec-panel-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;padding:22px 26px;border-bottom:1px solid #e4ebf0}.exec-panel-head h3{margin:0;font-size:24px;color:#11263a}.exec-panel-head p{margin:6px 0 0;color:#566f80;max-width:720px;line-height:1.7}.exec-pill{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:#eef5fb;color:#446071;font-size:12px;font-weight:700;white-space:nowrap}.exec-pill b{color:#2f7e63}.exec-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0}.exec-main{padding:24px 26px 26px}.exec-side{padding:24px 26px 26px;border-left:1px solid #e4ebf0;background:linear-gradient(180deg,#f8fbfd 0%,#f3f7fa 100%)}.exec-table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 24px}.exec-table th,.exec-table td{padding:13px 12px;border-bottom:1px solid #ebf0f4;text-align:left;vertical-align:top}.exec-table th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5d7180;background:#fafcfd}.exec-table td:first-child{font-weight:700;color:#17324a}.exec-chooser{border:1px solid #e4ebf0;border-radius:20px;padding:18px 18px 14px;background:#fcfdff}.exec-chooser-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.exec-field legend{font-weight:800;color:#335067;margin-bottom:10px}.exec-options{display:grid;gap:10px}.exec-option{display:flex;align-items:flex-start;gap:10px;padding:10px 8px;border-radius:14px;cursor:pointer;transition:.18s background ease}.exec-option:hover{background:#f5f8fb}.exec-option input{margin-top:3px}.exec-option span b{display:block;color:#12293b;font-size:15px}.exec-option span small{display:block;color:#687e8f;line-height:1.5;margin-top:3px}.exec-route-box{margin-top:16px;padding-top:14px;border-top:1px solid #e7edf2}.exec-route-tag{display:inline-flex;padding:6px 12px;border-radius:999px;background:#eaf5ef;color:#3b8e69;font-weight:800;font-size:13px;margin-bottom:12px}.exec-route-note{color:#536b7a;line-height:1.75;margin:0 0 14px}.exec-steps{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.exec-step{display:inline-flex;align-items:center;gap:10px;color:#17334b;font-weight:700;background:#f4f8fb;border:1px solid #dde8ef;border-radius:999px;padding:9px 12px}.exec-step:after{content:"→";color:#b98f4c;font-weight:900}.exec-step:last-child:after{display:none}.exec-expand{margin-top:18px;border:none;background:#081019;color:#fff;font-weight:800;padding:14px 18px;border-radius:999px;width:100%;cursor:pointer}.exec-inspector{display:grid;gap:16px}.exec-card{background:#fff;border:1px solid #dde7ee;border-radius:18px;padding:16px 16px 14px}.exec-card small{display:block;color:#71889a;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}.exec-card h4{margin:0 0 8px;color:#102538;font-size:22px}.exec-card p{margin:0;color:#516779;line-height:1.75}.exec-list{margin:10px 0 0;padding-left:18px;color:#516779;line-height:1.75}.exec-highlight{background:#fff7e8;border-color:#efd8ab}.exec-highlight h4{color:#9b6a19}.exec-detail{display:none}.exec-detail.is-open{display:block}.exec-guard{display:flex;gap:10px;align-items:flex-start}.exec-guard b{min-width:84px;color:#18364d}.exec-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.exec-map .exec-card h5{margin:0 0 6px;color:#17324a;font-size:15px}.exec-map .exec-card p{font-size:14px}.exec-card code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#eef3f7;padding:2px 6px;border-radius:7px;color:#284055}.exec-manual{margin-top:10px;font-size:13px;color:#6a7f8e}.exec-manual b{color:#2b5f89}.exec-inline{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef5fb;color:#315d80;font-weight:800;font-size:12px}.exec-card .exec-inline.gold{background:#fff3d9;color:#9e6d17}.exec-card .exec-inline.green{background:#eaf5ef;color:#2d8b65}.exec-card .exec-inline.blue{background:#eef5fb;color:#29537b}.exec-card .exec-inline.purple{background:#f1ecff;color:#5f49a3}@media (max-width: 980px){.exec-grid{grid-template-columns:1fr}.exec-side{border-left:none;border-top:1px solid #e4ebf0}.exec-chooser-grid{grid-template-columns:1fr}}
+</style>
+<section class="exec-section" id="exec-router" aria-labelledby="exec-title">
+  <div class="exec-wrap">
+    <div class="exec-eyebrow">Execution Router / 执行策略路由器</div>
+    <h2 class="exec-title" id="exec-title">入口收到自然语言后，<br><em>如何选择执行方式？</em></h2>
+    <p class="exec-lead">这是入口最关键的技术设计之一。Execution Router 不是另一个拥有任务控制权的超级 Agent，而是依据任务特征，向 Task Core 提交可校验的执行策略建议。它把自然语言任务路由到 <b>Direct</b>、<b>Agent Loop</b>、<b>LangGraph</b> 或 <b>Hybrid</b> 四种执行模式；即使用户手动指定策略，也仍要经过 Task Core 的权限、能力与业务约束校验。</p>
+    <div class="exec-panel">
+      <div class="exec-panel-head">
+        <div><h3>四种执行模式与入口交互示范</h3><p>下方交互区保留了你截图中的设计意图：先根据任务性质决定执行模式，再把执行提案交给 Task Core。这里做成了可操作的产品展示模块，方便放进 V8 与后续桌面端联动演示。</p></div>
+        <span class="exec-pill">推荐默认：<b>Auto</b> · 真实系统仍需 Task Core 复核</span>
+      </div>
+      <div class="exec-grid">
+        <div class="exec-main">
+          <table class="exec-table" aria-label="四种执行模式说明">
+            <thead><tr><th>模式</th><th>触发条件</th><th>实际例子</th></tr></thead>
+            <tbody>
+              <tr><td>Direct</td><td>不需要多步推理或复杂执行</td><td>GIS 单位换算、查询某份已知文件、简单字段统计</td></tr>
+              <tr><td>Agent Loop</td><td>任务路径不确定，需要边检索边推理</td><td>追踪某条土地政策的历史演变、核对多份来源差异</td></tr>
+              <tr><td>LangGraph</td><td>已经有明确的专业业务步骤</td><td>批量执行标准化规划符合性核查、固定流程审批材料审查</td></tr>
+              <tr><td>Hybrid</td><td>既有规定的业务阶段，又需节点内自主探索</td><td>综合选址论证、完整规划编制与政策研究报告</td></tr>
+            </tbody>
+          </table>
+          <div class="exec-chooser">
+            <div class="exec-chooser-grid">
+              <fieldset class="exec-field">
+                <legend>模拟用户请求</legend>
+                <div class="exec-options" id="exec-request-group">
+                  <label class="exec-option"><input type="radio" name="exec-request" value="area"><span><b>查询地块面积</b><small>短任务、目标明确、已有空间对象或数据入口。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-request" value="policy"><span><b>研究政策沿革</b><small>多来源检索、需要对时点、效力与差异逐步核对。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-request" value="review"><span><b>标准化地块核查</b><small>已有固定步骤、输入输出明确、适合状态化编排。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-request" value="report" checked><span><b>编制选址论证报告</b><small>一部分流程固定，另一部分需要自主研究与专业审查。</small></span></label>
+                </div>
+              </fieldset>
+              <fieldset class="exec-field">
+                <legend>执行策略</legend>
+                <div class="exec-options" id="exec-strategy-group">
+                  <label class="exec-option"><input type="radio" name="exec-strategy" value="Auto" checked><span><b>Auto</b><small>交给 Execution Router 自动推荐。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-strategy" value="Direct"><span><b>Direct</b><small>直接调用明确能力，适合简单任务。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-strategy" value="Agent Loop"><span><b>Agent Loop</b><small>边检索边推理，允许证据驱动的探索。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-strategy" value="LangGraph"><span><b>LangGraph</b><small>固定图式步骤、便于恢复与审计。</small></span></label>
+                  <label class="exec-option"><input type="radio" name="exec-strategy" value="Hybrid"><span><b>Hybrid</b><small>固定阶段 + 局部自主探索的组合模式。</small></span></label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="exec-route-box">
+              <span class="exec-route-tag" id="exec-result-tag">Hybrid</span>
+              <p class="exec-route-note" id="exec-result-note">当前为自动推荐示例：编制选址论证报告既需要固定步骤，也需要在材料、约束和方案之间做多轮判断，因此优先建议 Hybrid。</p>
+              <div class="exec-steps" id="exec-result-steps"></div>
+              <div class="exec-manual" id="exec-manual-note">当前为 <b>Auto</b> 推荐，真实系统会把策略建议提交给 Task Core 做权限、能力与预算复核。</div>
+              <button class="exec-expand" id="exec-expand" type="button">展开这条执行路径的设计</button>
+            </div>
+          </div>
+        </div>
+        <aside class="exec-side">
+          <div class="exec-inspector">
+            <article class="exec-card exec-highlight">
+              <small>ROUTER RESULT / 当前执行提案</small>
+              <h4 id="exec-mode-title">Hybrid</h4>
+              <p id="exec-mode-desc">先按业务阶段固定资料收集、约束核查和成果结构，再在关键节点内启用 Agent Loop 完成证据缺口补齐、方案比较和专业撰写。</p>
+            </article>
+            <article class="exec-card">
+              <small>BOUNDARY / 为什么不是“超级 Agent”</small>
+              <div class="exec-guard"><b>核心边界</b><p>Execution Router 只做<strong>策略建议</strong>，不拥有任务控制权、证据发布权或成果接受权。真正的计划接受、attempt 创建、预算扣减、取消和恢复，仍由 <code>Task Core</code> 统一掌管。</p></div>
+            </article>
+            <article class="exec-card">
+              <small>ROUTE MAP / 四种方式的关系</small>
+              <div class="exec-map">
+                <div class="exec-card"><h5><span class="exec-inline blue">Direct</span></h5><p>最快、最省成本，适合单步问题和确定性能力调用。</p></div>
+                <div class="exec-card"><h5><span class="exec-inline green">Agent Loop</span></h5><p>更灵活，适合不确定问题的迭代研究和检索补证。</p></div>
+                <div class="exec-card"><h5><span class="exec-inline purple">LangGraph</span></h5><p>更稳定，适合标准步骤、可恢复与可审计的业务流程。</p></div>
+                <div class="exec-card"><h5><span class="exec-inline gold">Hybrid</span></h5><p>综合最强，把标准流程与自主探索组合到同一任务中。</p></div>
+              </div>
+            </article>
+            <div class="exec-detail" id="exec-detail">
+              <article class="exec-card">
+                <small>DESIGN DETAIL / 路径展开</small>
+                <h4 id="exec-detail-title">Hybrid 路径设计</h4>
+                <p id="exec-detail-text">用固定业务阶段锁定材料与审查节点，再在节点内调用 Agent Loop 或子 Agent 完成开放研究。</p>
+                <ul class="exec-list" id="exec-detail-list"></ul>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="fx8-section" id="fx8-rich" aria-labelledby="fx8-title">
@@ -1834,7 +1949,8 @@ $('#fx8-export-json').addEventListener('click',()=>download('PH_rich_blocks_demo
 $('#fx8-export-html').addEventListener('click',()=>{
   const preview=$('#fx8-report').cloneNode(true);preview.querySelectorAll('button,input').forEach(n=>n.remove());
   const css=document.getElementById('fx8-rich-style')?.textContent||'';
-  const body=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; script-src 'none'; connect-src 'none'"><title>PersonalHarness 富文档离线示例</title><style>body{background:#e7eeea;font-family:Arial,'Microsoft YaHei',sans-serif;padding:2rem;color:#263e49}.fx8-report{width:min(100%,760px);margin:auto;min-height:0}${css}</style></head><body><main class="fx8-section" style="background:transparent;padding:0"><article class="fx8-report">${preview.innerHTML}</article></main><p style="text-align:center;font-size:12px;color:#617c7e">PersonalHarness 第八版展示 / 静态导出 · 非正式专业成果 · 不含外部依赖</p></body></html>`;
+  const body=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; script-src 'none'; connect-src 'none'"><title>PersonalHarness 富文档离线示例</title><style>body{background:#e7eeea;font-family:Arial,'Microsoft YaHei',sans-serif;padding:2rem;color:#263e49}.fx8-report{width:min(100%,760px);margin:auto;min-height:0}${css}</style></head><body><main class="fx8-section" style="background:transparent;padding:0"><article class="fx8-report">${preview.innerHTML}</article></main><p style="text-align:center;font-size:12px;color:#617c7e">PersonalHarness 第八版展示 / 静态导出 · 非正式专业成果 · 不含外部依赖</p>
+</body></html>`;
   download('PH_rich_report_offline_demo_v8.html',body,'text/html;charset=utf-8');
 });
 $$('[data-fx8-case]').forEach(b=>b.addEventListener('click',()=>{state.scene=b.dataset.fx8Case;state.frame=1;state.policyTab=0;renderDoc();}));
@@ -1844,5 +1960,28 @@ renderArch();renderType();renderDoc();
 })();
 
 </script>
+
+<script id="exec-router-script">
+(()=>{'use strict';
+const cases={
+ area:{name:'查询地块面积',auto:'Direct',note:'目标清晰、数据对象已知、真实执行通常是单次 Geo 能力调用。',steps:['任务识别','Geo 能力检查','单步量算','返回结果'],detail:'Direct 路径设计',text:'把自然语言转换为一个受控的单步空间任务，直接调用 Geo 能力完成量算。',list:['Execution Router 识别为低复杂度、单能力调用任务。','Task Core 校验当前任务是否拥有访问该地块与执行量算的权限。','Geo Core 选择开源 GIS Worker 或 ArcGIS Pro Bridge 执行。','回执、单位与结果版本进入任务记录。']},
+ policy:{name:'研究政策沿革',auto:'Agent Loop',note:'问题边界不完全确定，需要动态检索、逐轮核查和反证比较。',steps:['任务规划','检索法规与约束','Agent 分析','形成判断','审查'],detail:'Agent Loop 路径设计',text:'先形成研究问题，再在证据驱动下多轮检索与回读，直到缺口收敛。',list:['Execution Router 根据“沿革/历史/冲突/变化”特征倾向 Agent Loop。','Knowledge 与 Web Retrieval 提供候选来源，Policy 负责效力与适用判断。','Agent 每轮补充检索都需记录来源与引用边界。','最终结果进入 EvidencePacket 和报告草稿，等待人工审查。']},
+ review:{name:'标准化地块核查',auto:'LangGraph',note:'流程稳定、节点固定，适合定义标准状态机并支持失败恢复。',steps:['任务接受','资料预检','规则核查','异常分流','批量汇总'],detail:'LangGraph 路径设计',text:'把固定业务步骤编码成受控流程图，输入输出、异常与恢复都可审计。',list:['Execution Router 根据“标准化/批量/固定清单”特征倾向 LangGraph。','Task Core 接受批处理计划，Runner 逐地块创建受控节点状态。','Geo / Policy / Project 节点按预定义顺序执行。','失败节点可单独恢复，不影响已完成地块。']},
+ report:{name:'编制选址论证报告',auto:'Hybrid',note:'既要经历固定步骤，又要在资料缺口、方案比较和撰写阶段自主研究。',steps:['任务规划','资料与约束核查','Agent 分析','成果编写','审查'],detail:'Hybrid 路径设计',text:'先用固定业务阶段组织材料、约束和输出结构，再在关键节点内调用 Agent Loop 与专业执行器。',list:['Execution Router 根据“报告/论证/综合选址”等复合任务特征倾向 Hybrid。','Task Core 先接受一个阶段化 DeliveryPlan 与审查要求。','LangGraph 负责阶段控制，Agent Loop 在“资料缺口补齐、方案比较、文本起草”等节点自主研究。','Geo、Knowledge、Policy、Delivery 共同参与，同一版本的证据和输出保持联动。']}
+};
+const modes={
+ 'Direct':{title:'Direct',desc:'直接把任务映射为单步或少步能力调用，追求低成本与高确定性。'},
+ 'Agent Loop':{title:'Agent Loop',desc:'允许边检索边推理，适合开放问题和证据驱动的迭代研究。'},
+ 'LangGraph':{title:'LangGraph',desc:'把业务步骤和状态显式化，适合标准流程、审计与失败恢复。'},
+ 'Hybrid':{title:'Hybrid',desc:'将阶段化 Workflow 与节点内自主研究结合，适合复杂专业任务。'}
+};
+const $=s=>document.querySelector(s); const $$=s=>document.querySelectorAll(s);
+function currentCase(){const n=$('input[name="exec-request"]:checked');return cases[n?n.value:'report'];}
+function currentStrategy(){const n=$('input[name="exec-strategy"]:checked');return n?n.value:'Auto';}
+function renderExec(){const c=currentCase();const strategy=currentStrategy();const finalMode=strategy==='Auto'?c.auto:strategy;const mode=modes[finalMode];$('#exec-result-tag').textContent=finalMode;$('#exec-mode-title').textContent=mode.title;$('#exec-mode-desc').textContent=mode.desc;$('#exec-result-note').textContent=(strategy==='Auto'?'当前为自动推荐示例：':'当前为手动选择示例：')+c.note;$('#exec-manual-note').innerHTML=strategy==='Auto'?'当前为 <b>Auto</b> 推荐，真实系统会把策略建议提交给 Task Core 做权限、能力与预算复核。':'当前为手动选择示例；真实系统仍会校验该策略是否符合业务、授权和能力边界。'; const steps=$('#exec-result-steps');steps.innerHTML=''; c.steps.forEach((s,i)=>{const el=document.createElement('span');el.className='exec-step';el.textContent=s;steps.appendChild(el);}); $('#exec-detail-title').textContent=(strategy==='Auto'?c.detail:(finalMode+' 路径设计')); $('#exec-detail-text').textContent=(strategy==='Auto'?c.text:(mode.desc+' 此处为用户手动指定后的展示路径，仍需要与当前任务 profile 比对。')); const list=$('#exec-detail-list'); list.innerHTML=''; const entries=(strategy==='Auto'?c.list:[ '保留当前任务 profile、权限和预算检查。','Execution Router 记录用户指定策略，并将其作为 StrategyHint 提交给 Task Core。','若能力不足、风险过高或与方法规程冲突，Task Core 可拒绝或改写执行策略。','执行结果仍按统一回执、证据和成果版本体系归档。']); entries.forEach(item=>{const li=document.createElement('li');li.textContent=item;list.appendChild(li);}); }
+$$('input[name="exec-request"]').forEach(el=>el.addEventListener('change',renderExec));$$('input[name="exec-strategy"]').forEach(el=>el.addEventListener('change',renderExec)); $('#exec-expand').addEventListener('click',()=>{const box=$('#exec-detail'); const open=box.classList.toggle('is-open'); $('#exec-expand').textContent=open?'收起这条执行路径的设计':'展开这条执行路径的设计';}); renderExec();
+})();
+</script>
+
 </body>
 </html>
