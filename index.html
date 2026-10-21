@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="light" name="color-scheme"/><meta content="#102736" name="theme-color"/>
-<meta content="蜂巢引擎 Personal Harness 全景产品展示：多模型子 Agent 动态编排、政策研究、国土空间规划编制、建筑设计、双路径 Geo、Visual 生图与 Delivery 项目成果制作。" name="description"/>
+<meta content="蜂巢引擎 Personal Harness 全景产品展示：多模型子 Agent 编排、RichDocument 富组件渲染、政策研究、规划编制、双路径 Geo、Visual 生图与可编辑离线交付。" name="description"/>
 <meta content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/>
-<title>蜂巢引擎｜第七版 Personal Harness · Subagent 多模型编排与专业协同展示</title>
+<title>蜂巢引擎｜第八版 Personal Harness · 多模型编排与富组件成果引擎</title>
 <style>
 :root{--bg:#f8f8f5;--paper:#fff;--ink:#213b4b;--deep:#172e3c;--text:#42535e;--muted:#7e8b92;--gold:#c78b2c;--honey:#e9b24b;--pale:#fbf2df;--line:#e2e7e7;--soft:#f0f3f2;--teal:#537c72;--sans:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;--serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}button,a,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button,input{font-family:inherit}svg{display:block}button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--gold);outline-offset:5px}::selection{background:#f0d49e;color:var(--ink)}[hidden]{display:none!important}.wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}.skip{position:fixed;left:20px;top:-70px;background:var(--ink);color:white;padding:10px 18px;z-index:100}.skip:focus{top:10px}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.symbol-bank{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}.gold{color:var(--gold)}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -668,6 +668,153 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 @media print{.mx7-svg-scroll{overflow:visible}#mx7-topology{min-width:0}}
 
 </style>
+<style id="fx8-rich-style">
+/* v8 isolated rich component showcase */
+.fx8-section{background:#f5f7f4;color:#203744;padding:98px 0 88px;position:relative;overflow:hidden}
+.fx8-section *{box-sizing:border-box}
+.fx8-section:before{content:"";pointer-events:none;position:absolute;top:0;right:-140px;width:740px;height:500px;opacity:.35;background:radial-gradient(ellipse at center,#d7e8e5,transparent 68%)}
+.fx8-section .wrap{position:relative;z-index:1}
+.fx8-intro{display:grid;grid-template-columns:minmax(0,1fr) 202px;gap:48px;align-items:center}
+.fx8-kicker,.fx8-panel-heading small,.fx8-code-head small,.fx8-roadmap small{font-size:10px;font-weight:800;letter-spacing:.16em;color:#477b80}
+.fx8-intro h2{font-size:clamp(29px,3.5vw,47px);line-height:1.42;letter-spacing:-.038em;margin:13px 0 18px;font-weight:670}
+.fx8-intro h2 em{font-style:normal;color:#b37b29}
+.fx8-intro p{color:#566b72;line-height:2.02;font-size:14px;max-width:900px;margin:0}
+.fx8-intro-index{align-self:stretch;background:#163746;color:#f5f9f9;border-radius:17px;padding:21px 23px;display:flex;flex-direction:column;gap:12px;box-shadow:0 14px 28px #1a405020}
+.fx8-intro-index>span{font-size:10px;letter-spacing:.13em;color:#9ebec1}
+.fx8-intro-index strong{display:flex;align-items:baseline;gap:8px;font-size:27px;font-weight:660;color:#efc27a;border-bottom:1px solid #66858a48;padding-bottom:9px;line-height:1.2}
+.fx8-intro-index strong span{font-size:12px;font-weight:480;color:#d6e5e4}
+.fx8-intro-index small{color:#aac2c2;font-size:10px;line-height:1.7}
+.fx8-horiz{display:flex;flex-wrap:wrap;gap:10px;padding:25px 0 29px}
+.fx8-horiz span{display:inline-flex;align-items:center;gap:8px;color:#557078;font-size:11px;border:1px solid #d7e2df;background:#fff;border-radius:50px;padding:6px 12px}
+.fx8-horiz i{height:6px;width:6px;background:#cc9b4d;border-radius:50%}
+.fx8-shell,.fx8-use-cases{background:white;border:1px solid #dae5e2;border-radius:20px;box-shadow:0 20px 40px #344f4c0b;overflow:hidden}
+.fx8-panel-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:24px 27px 20px;border-bottom:1px solid #e6ece8}
+.fx8-panel-heading h3{font-size:19px;margin:7px 0 0;letter-spacing:-.02em;line-height:1.5;font-weight:680;color:#203945}
+.fx8-panel-heading>span{font-size:11px;color:#779199;text-align:right;max-width:255px}
+.fx8-diagram-scroll{padding:21px 16px 4px;overflow-x:auto;scrollbar-width:thin}
+#fx8-architecture-svg{width:100%;min-width:1030px;max-width:1200px;display:block;margin:0 auto;touch-action:pan-x}
+.fx8-svg-node{cursor:pointer;outline:none}
+.fx8-svg-node rect{stroke:#afc4c5;stroke-width:1.2;fill:#f6faf8;transition:fill .2s,stroke .2s}
+.fx8-svg-node text.fx8-name{fill:#2a4853;font-size:14px;font-weight:650}
+.fx8-svg-node text.fx8-desc{fill:#6a8188;font-size:10px}
+.fx8-svg-node.fx8-active rect{stroke:#b4853e;fill:#fff2d9;stroke-width:2}
+.fx8-svg-node:focus-visible rect{stroke:#d7a041;stroke-width:3}
+.fx8-svg-edge{fill:none;stroke:#7c9da4;stroke-width:1.6}
+.fx8-architecture-inspector{display:grid;grid-template-columns:210px minmax(0,1fr) minmax(0,1fr);align-items:center;gap:24px;padding:18px 27px 22px;border-top:1px solid #e7eeec;background:#f7faf8}
+.fx8-architecture-inspector small{color:#669099;font-size:10px;letter-spacing:.12em;font-weight:750}
+.fx8-architecture-inspector h4{font-size:16px;margin:4px 0;color:#2d4953}
+.fx8-architecture-inspector p{font-size:12px;line-height:1.85;margin:0;color:#557078}
+.fx8-architecture-inspector .fx8-border-note{border-left:2px solid #d5a251;padding-left:14px}
+.fx8-use-cases{margin-top:27px}
+.fx8-choices{padding:15px 22px;background:#f8faf8;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;border-bottom:1px solid #e5edeb}
+.fx8-group{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.fx8-group button{border:1px solid #d7e3e2;background:#fff;color:#56737b;border-radius:9px;padding:9px 12px;font-size:12px;line-height:1.3}
+.fx8-group button:hover{border-color:#b18b50}
+.fx8-group button.fx8-on{background:#1d4856;border-color:#1d4856;color:white;font-weight:680}
+.fx8-modes{background:#e7eeec;padding:4px;border-radius:10px;gap:4px}
+.fx8-modes button{background:transparent;border:0;padding:9px 10px;font-size:11px;letter-spacing:.08em}
+.fx8-modes button.fx8-on{background:#d8a856;color:#263946}
+.fx8-workspace{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.73fr);gap:0;align-items:stretch}
+.fx8-report-area{padding:22px;background:#e6eceb;min-width:0}
+.fx8-viewport-head{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#47646c;font-size:10px;font-weight:720;letter-spacing:.03em;margin-bottom:11px}
+.fx8-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#68a199;margin-right:8px}
+.fx8-viewport-head b{color:#5e8581;font-size:10px;font-weight:620;text-align:right}
+.fx8-report{background:white;border-radius:12px;box-shadow:0 8px 24px #1e414524;border:1px solid #dae5e4;padding:27px 29px;min-height:635px;overflow:hidden}
+.fx8-doc-tag{display:flex;gap:8px;align-items:center;text-transform:uppercase;letter-spacing:.15em;font-size:9px;font-weight:720;color:#b68a45;margin-bottom:12px}
+.fx8-doc-tag:before{content:"";width:18px;height:1px;background:#b68a45}
+.fx8-report h3{font-family:var(--serif,serif);font-size:23px;color:#223c49;line-height:1.5;letter-spacing:0;margin:0 0 12px;font-weight:660}
+.fx8-report h4{font-size:15px;margin:19px 0 10px;letter-spacing:-.015em;color:#2b4951}
+.fx8-doc-summary{font-size:12px;color:#637b7e;line-height:1.85;margin:0 0 17px}
+.fx8-doc-metadata{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.fx8-doc-metadata span{font-size:10px;color:#57787e;padding:3px 9px;background:#edf4f2;border:1px solid #e0eae7;border-radius:20px}
+.fx8-rich-claim{background:#f2f7f5;border-left:3px solid #6b9b95;padding:12px 15px;color:#365661;font-size:12px;line-height:1.9;margin:14px 0}
+.fx8-widget{border:1px solid #d9e5e2;border-radius:12px;overflow:hidden;background:#fefefe}
+.fx8-widget-heading{background:#f2f6f4;padding:11px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.fx8-widget-heading b{font-size:12px;color:#31515c}
+.fx8-widget-heading small{font-size:9px;color:#64817d;text-transform:uppercase;letter-spacing:.11em}
+.fx8-widget-body{padding:15px 17px}
+.fx8-widget-info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:11px}
+.fx8-widget-info span{font-size:11px;color:#698087;background:#f4f8f7;padding:8px 12px;border-radius:7px}
+.fx8-widget-info strong{display:block;font-size:17px;color:#234653;letter-spacing:-.02em}
+.fx8-chart-control{display:flex;align-items:center;gap:12px;padding:7px 0 11px;font-size:11px;color:#54737a}
+.fx8-chart-control input{flex:1;accent-color:#bd8635;min-width:0}
+.fx8-chart-control output{font-weight:760;color:#9e6f2e;min-width:35px;text-align:right}
+.fx8-chart-svg{width:100%;height:auto;max-height:235px;display:block}
+.fx8-chart-svg text{font-size:11px;fill:#6a8488}
+.fx8-chart-svg .fx8-legend{font-size:11px;font-weight:640}
+.fx8-frame-nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+.fx8-frame-nav button,.fx8-policy-switch button,.fx8-layer-switch button{background:#f6faf8;color:#496b71;border:1px solid #dce7e5;border-radius:8px;padding:7px 11px;font-size:11px;cursor:pointer}
+.fx8-frame-nav button.fx8-selected,.fx8-policy-switch button.fx8-selected,.fx8-layer-switch button.fx8-selected{background:#d7eae6;border-color:#79aaa2;color:#234c55;font-weight:720}
+.fx8-policy-switch,.fx8-layer-switch{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}
+.fx8-condition-list{display:grid;gap:9px;margin-top:9px}
+.fx8-condition-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #e0e9e5;border-radius:8px;padding:10px 12px;font-size:11px;color:#526f72}
+.fx8-condition-row strong{font-size:11px;font-weight:650;color:#ad7532}
+.fx8-data-table{width:100%;border-collapse:collapse;margin-top:15px;table-layout:fixed;font-size:11px;line-height:1.7}
+.fx8-data-table th,.fx8-data-table td{border-bottom:1px solid #e3eae8;padding:8px 6px;text-align:left;word-break:break-word}
+.fx8-data-table th{color:#607a7c;background:#f6f9f7;font-weight:700}
+.fx8-data-table td{color:#365661}
+.fx8-evidence-note{display:flex;align-items:flex-start;gap:10px;margin-top:16px;background:#fff8ea;border:1px solid #f3e5cb;padding:12px 14px;border-radius:8px;font-size:11px;line-height:1.7;color:#765e37}
+.fx8-evidence-note b{white-space:nowrap;color:#a17437}
+.fx8-mini-map{width:100%;max-height:252px;display:block;border-radius:8px;border:1px solid #dfe7e5;background:#eef3ef}
+.fx8-mini-map .fx8-highlight{stroke:#c88e41;stroke-width:3.5}
+.fx8-code-area{background:#173542;color:#e9f3f1;display:flex;flex-direction:column;min-width:0}
+.fx8-code-head{padding:24px 24px 12px}
+.fx8-code-head small{color:#9cbdc2}
+.fx8-code-head h4{font-size:18px;margin:8px 0;color:#f1f7f5}
+.fx8-code-head p{font-size:12px;line-height:1.8;color:#adc7c8;margin:0}
+.fx8-code-meta{display:flex;justify-content:space-between;gap:6px;padding:10px 24px;color:#f1c785;font-size:10px;font-weight:730;letter-spacing:.02em}
+.fx8-code-area pre{margin:0 17px 15px;background:#0d2632;border:1px solid #49667270;border-radius:10px;color:#b2d5d2;line-height:1.8;font-size:11px;padding:18px;overflow:auto;max-height:425px;white-space:pre;tab-size:2;flex:1;min-height:280px}
+.fx8-actions{padding:5px 17px 15px;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.fx8-actions button{border:1px solid #719a9b70;border-radius:8px;padding:11px 6px;background:#294d5a;color:#edf5f3;font-size:11px;line-height:1.4}
+.fx8-actions button:hover{border-color:#f0bf70;background:#315c68}
+.fx8-micro{border-top:1px solid #5e808244;padding:14px 24px 24px;color:#b4ccca;font-size:10px;line-height:1.8}
+.fx8-micro b{color:#f5ce8f}
+.fx8-mechanism{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#dce5e1;border-top:1px solid #e1e9e6}
+.fx8-mechanism article{background:#f9fbf9;padding:21px 24px}
+.fx8-mechanism small{color:#b5823b;font-size:10px;font-weight:790;letter-spacing:.12em}
+.fx8-mechanism h4{font-size:14px;color:#2b4951;margin:6px 0}
+.fx8-mechanism p{font-size:11px;color:#718486;line-height:1.85;margin:0}
+.fx8-bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:25px}
+.fx8-bottom-grid .fx8-panel-heading h3{font-size:17px}
+.fx8-bottom-grid .fx8-panel-heading>span{font-size:10px}
+.fx8-type-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;padding:18px 20px 10px}
+.fx8-type-list button{display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;border:1px solid #e0e9e6;border-radius:10px;background:#f7faf8;padding:12px 8px;color:#31505a;line-height:1.5;font-size:10px;min-width:0}
+.fx8-type-list button b{background:#e5eeeb;color:#4f8584;border-radius:5px;min-width:24px;display:inline-flex;align-items:center;justify-content:center;padding:3px}
+.fx8-type-list button.fx8-picked{border-color:#c3924c;background:#fff8eb}
+.fx8-type-list button.fx8-picked b{background:#eac589;color:#48351f}
+.fx8-type-list button small{color:#799093;font-size:10px}
+.fx8-type-detail{padding:12px 22px 23px;min-height:132px}
+.fx8-type-detail h4{font-size:14px;margin:0 0 6px;color:#2a4c55}
+.fx8-type-detail p{font-size:12px;color:#617e80;line-height:1.9;margin:0 0 8px}
+.fx8-type-detail code{display:inline-block;font-size:11px;color:#986d3c;background:#f5f1e6;padding:4px 8px;border-radius:5px}
+.fx8-domain-stack{padding:19px 23px 0;display:flex;flex-direction:column;gap:10px}
+.fx8-domain-box,.fx8-domain-focus{padding:10px 15px;border:1px solid #e0e9e5;border-radius:9px;background:#f9fbfa;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.fx8-domain-box b,.fx8-domain-focus b{font-size:11px;color:#32545a}
+.fx8-domain-box span,.fx8-domain-focus span{color:#6c8588;font-size:10px;text-align:right}
+.fx8-domain-focus{background:#e8f3f0;border-color:#9bc5bc}
+.fx8-down-arrow{color:#a47d45;font-size:10px;text-align:center;line-height:1.3}
+.fx8-domain-foot{margin:12px 23px 21px;font-size:11px;color:#6c8082;line-height:1.8}
+.fx8-roadmap{background:#173744;color:#eef6f3;border-radius:18px;margin-top:26px;padding:27px 30px;display:grid;grid-template-columns:.86fr 1.14fr;gap:36px;align-items:center}
+.fx8-roadmap small{color:#aacfd3}
+.fx8-roadmap h3{font-size:18px;margin:8px 0 8px;line-height:1.6;color:#f1f6f3}
+.fx8-roadmap p{font-size:11px;color:#b1c8c9;line-height:1.8;margin:0}
+.fx8-roadmap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fx8-roadmap-grid span{border:1px solid #668f9370;background:#234756;color:#d1e3df;border-radius:8px;padding:10px;font-size:11px;line-height:1.5}
+.fx8-roadmap-grid b{display:block;color:#efc37d;font-size:11px;margin-bottom:5px}
+.fx8-disclaimer{font-size:11px;line-height:1.9;color:#687f7e;margin:19px 4px 0}
+@media(max-width:1060px){.fx8-workspace{grid-template-columns:minmax(0,1.2fr) minmax(280px,.85fr)}.fx8-intro{grid-template-columns:minmax(0,1fr) 160px;gap:24px}.fx8-intro-index{padding:18px}.fx8-group button{font-size:11px;padding:8px}.fx8-type-list{grid-template-columns:repeat(3,minmax(0,1fr))}.fx8-domain-box,.fx8-domain-focus{display:block}.fx8-domain-box span,.fx8-domain-focus span{display:block;text-align:left;margin-top:3px}}
+@media(max-width:800px){.fx8-section{padding:65px 0}.fx8-intro{grid-template-columns:1fr}.fx8-intro-index{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.fx8-intro-index>span,.fx8-intro-index small{grid-column:1/-1}.fx8-intro-index strong{display:block}.fx8-intro-index strong span{display:block;line-height:1.7}.fx8-architecture-inspector{grid-template-columns:1fr 1fr;gap:12px}.fx8-architecture-inspector>div{grid-column:1/-1}.fx8-workspace{grid-template-columns:1fr}.fx8-code-area pre{min-height:170px;max-height:295px}.fx8-bottom-grid{grid-template-columns:1fr}.fx8-roadmap{grid-template-columns:1fr}}
+@media(max-width:520px){.fx8-section .wrap{width:min(100% - 30px,1180px)}.fx8-intro h2{font-size:30px}.fx8-intro p{font-size:12px}.fx8-intro-index strong{font-size:22px}.fx8-horiz{padding:19px 0 22px}.fx8-horiz span{font-size:10px}.fx8-panel-heading{padding:19px 17px;display:block}.fx8-panel-heading h3{font-size:16px}.fx8-panel-heading>span{display:block;text-align:left;margin-top:5px}.fx8-architecture-inspector{padding:16px;grid-template-columns:1fr}.fx8-architecture-inspector>div{grid-column:auto}.fx8-choices{padding:13px}.fx8-group{gap:6px}.fx8-group button{font-size:10px}.fx8-report-area{padding:13px}.fx8-report{padding:18px 15px;min-height:0}.fx8-report h3{font-size:19px}.fx8-viewport-head{font-size:9px;align-items:start}.fx8-widget-body{padding:10px}.fx8-widget-info span{font-size:10px}.fx8-mechanism{grid-template-columns:1fr}.fx8-type-list{padding:16px;grid-template-columns:repeat(2,minmax(0,1fr))}.fx8-domain-stack{padding:16px 14px}.fx8-domain-foot{margin:0 14px 16px}.fx8-roadmap{padding:21px}.fx8-roadmap-grid{grid-template-columns:repeat(2,1fr)}.fx8-actions{grid-template-columns:1fr}}
+@media(min-width:1201px){.nav-links{gap:16px;font-size:11px}}
+
+.fx8-layerstrip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:#e5eeea;border-top:1px solid #e3ebe8}
+.fx8-layerstrip div{padding:15px 12px;background:#fafcfb;display:flex;flex-direction:column;gap:2px}
+.fx8-layerstrip b{color:#ad7a3c;font-size:11px;letter-spacing:.08em}
+.fx8-layerstrip span{font-size:11px;font-weight:730;color:#33535e}
+.fx8-layerstrip small{font-size:10px;color:#77908f}
+@media(max-width:650px){.fx8-layerstrip{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+</style>
 </head>
 <body id="top"><div aria-hidden="true" class="page-progress" id="page-progress"></div>
 <a class="skip" href="#main">跳到产品介绍</a>
@@ -688,10 +835,10 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 </defs></svg>
 <header class="topbar"><div class="wrap nav">
 <a aria-label="蜂巢引擎，返回页首" class="brand" href="#top"><svg aria-hidden="true" class="brand-icon" viewbox="145 270 400 420"><use href="#brand-raster"></use></svg><span class="brand-name">蜂巢引擎</span></a>
-<nav aria-label="主导航" class="nav-links"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
+<nav aria-label="主导航" class="nav-links"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
 <a class="btn small" href="#hvx-console">探索产品 <span aria-hidden="true">↗</span></a>
 <button aria-controls="mobile-menu" aria-expanded="false" aria-label="展开导航" class="nav-menu-button" id="menu-toggle" type="button"><svg class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
-</div><nav aria-label="移动端导航" class="mobile-menu" hidden="" id="mobile-menu"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
+</div><nav aria-label="移动端导航" class="mobile-menu" hidden="" id="mobile-menu"><a href="#hvx-console">一体化工作台</a><a href="#hvx-world">产品全景</a><a href="#phx-agentic">研究引擎</a><a href="#pro-consult">咨询与研究</a><a href="#pro-planning">规划编制</a><a href="#pro-architecture">建筑各专业</a><a href="#urban-lab">城市设计</a><a href="#mx7-orchestrator">多模型编排</a><a href="#fx8-rich">富组件成果</a><a href="#phx-atlas">架构图解</a><a href="#outputs">成果交付</a></nav>
 </header>
 <main id="main">
 <section aria-labelledby="hero-title" class="hero">
@@ -701,7 +848,7 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
 <div class="hero-kicker">面向规划 · 咨询 · 研究 · 设计的个人专业 AI 工作系统</div>
 <p class="subtitle">Personal Harness · 蜂巢引擎</p>
 <h1 id="hero-title">把专业工作，<br/>组织成一个<em>完整系统。</em></h1>
-<p class="hero-lead">从 Agentic RAG 证据研究、多模型 Subagent 动态编排，到空间分析、设计推演、AI 生图和可编辑交付。<br/>一个项目空间，联通知识、工具、模型与成果。</p>
+<p class="hero-lead">从 Agentic RAG、多模型 Subagent 编排、Geo 与 Visual 专业执行，到可交互富文档、证据化成果和完整离线交付。<br/>一个项目空间，联通知识、工具、模型与成果。</p>
 <div class="hero-actions"><a class="btn" href="#hvx-console">进入一体化工作台 ↗</a><a class="btn secondary" href="#hvx-world">查看产品全景 ↓</a><a class="btn secondary" href="#urban-lab">体验城市设计 ↘</a><a class="btn secondary" href="#phx-agentic">探索 Agentic RAG <span aria-hidden="true">↗</span></a></div>
 <div class="urban-hero-callout">ALL-IN-ONE PROJECT WORKSPACE <span>知识与政策</span><span>WebGIS × AI 画布</span><span>设计建模 × 智能交付</span></div>
 </div>
@@ -1013,6 +1160,28 @@ body{background:var(--bg);font-size:15px;letter-spacing:.003em}
    <div class="mx7-run-board"><div class="mx7-run-head"><div><small>EXECUTION TRACE / STAGE VIEW</small><h4>观察任务如何从拆分到并行汇总</h4></div><div class="mx7-stages" role="group" aria-label="模拟执行阶段"><button type="button" data-mx7-stage="plan" class="mx7-active">01 · 规划授权</button><button type="button" data-mx7-stage="fanout">02 · 并行执行</button><button type="button" data-mx7-stage="review">03 · 汇总 / QC</button></div></div><div id="mx7-trace" class="mx7-trace" aria-live="polite"></div></div>
    <div class="mx7-footgrid"><article><b>模型的职责是思考和理解</b><p>LLM 用于规划、检索策略、文本和分析；VLM 用于图面理解；Image Model 用于候选图生成。模型身份、版本、上下文和调用参数由 Model Router / Provider Adapter 记录。</p></article><article><b>工具的职责是真实执行</b><p>Knowledge MCP、Geo 开源 GIS Worker / ArcGIS Pro Bridge、CAD / Rhino / GH、ComfyUI 与外部 API 是独立能力。视觉模型生成的内容不冒充空间事实或工程数值。</p></article><article><b>审查和业务接受不是一回事</b><p>Reviewer 可独立核对冻结证据；Task Core 决定业务接受。多模型多数意见不能代替政策原文、GIS 回执、原生文件回读或必要人工审定。</p></article></div>
   </div>
+ </div>
+</section>
+
+<section class="fx8-section" id="fx8-rich" aria-labelledby="fx8-title">
+ <div class="wrap">
+  <div class="fx8-intro"><div><div class="fx8-kicker">08 / RICH DOCUMENT ENGINE · CONTENT BLOCK SYSTEM</div><h2 id="fx8-title">让一份专业成果，<br><em>从文字变成可交互、可审查、可携带的工作空间。</em></h2><p>不是照搬 ChatGPT 的私有组件，而是把多种内容形态统一为 <b>RichDocument → 规范内容块 → 注册表 → 渲染与回退 → Delivery</b>。同一份政策报告可以同时承载原文证据、可编辑关系图、数据表格、GIS 结果与交互模型，并导出脱离服务端也能阅读的自包含 HTML。</p></div><div class="fx8-intro-index"><span>ENGINE PRINCIPLE</span><strong>1<span>文档权威</span></strong><strong>3<span>渲染策略</span></strong><strong>6<span>表达层次</span></strong><small>完成态产品机制展示 · 尚未在正式 Personal Harness 中验收</small></div></div>
+  <div class="fx8-horiz"><span><i></i> 结构化富内容</span><span><i></i> 有界的交互运行时</span><span><i></i> 逐块失效降级</span><span><i></i> 离线可审查成果</span></div>
+  <div class="fx8-shell fx8-architecture"><div class="fx8-panel-heading"><div><small>ARCHITECTURE / CLICKABLE FLOW</small><h3>从外部富内容，到 Personal Harness 的一条成果链</h3></div><span>点击流程节点，查看接口和责任边界</span></div>
+   <div class="fx8-diagram-scroll"><svg id="fx8-architecture-svg" viewBox="0 0 1180 204" role="group" aria-label="富组件迁移架构：来源、分类器、RichDocument、块模型、注册表、渲染器、验证导出"></svg></div>
+   <div class="fx8-architecture-inspector"><div><small id="fx8-node-num">01 / INGEST</small><h4 id="fx8-node-title">来源与导入</h4></div><p id="fx8-node-desc">不同来源先解析为有出处的候选片段，不直接执行源代码。</p><p class="fx8-border-note" id="fx8-node-boundary">ChatGPT / Claude / Markdown / 文档仅提供原始内容与元数据，不取得任务权威。</p></div>
+  <div class="fx8-layerstrip" aria-label="富组件来源的六层结构">
+    <div><b>L0</b><span>Markdown</span><small>文本基础层</small></div><div><b>L1</b><span>DIL Layout</span><small>声明式布局</small></div><div><b>L2</b><span>Chart / SVG</span><small>基础可视件</small></div><div><b>L3</b><span>Typed Widget</span><small>类型化学习件</small></div><div><b>L4</b><span>Stateful JSX</span><small>交互签名</small></div><div><b>L5</b><span>Snapshot</span><small>页面快照</small></div>
+   </div></div>
+  <div class="fx8-use-cases"><div class="fx8-panel-heading"><div><small>LIVE PRODUCT DEMO / MULTIMODAL RICH CONTENT</small><h3>一个 RichDocument，三种专业报告与三种呈现方式</h3></div><span>真正可操作的浏览器演示，不调用模型 API</span></div>
+   <div class="fx8-choices"><div class="fx8-group" role="tablist" aria-label="富内容业务案例"><button type="button" role="tab" aria-selected="true" class="fx8-on" data-fx8-case="economy">宏观经济 · 交互曲线</button><button type="button" role="tab" aria-selected="false" data-fx8-case="policy">政策研究 · 证据矩阵</button><button type="button" role="tab" aria-selected="false" data-fx8-case="spatial">规划 GIS · 多图融合</button></div><div class="fx8-group fx8-modes" role="tablist" aria-label="富组件渲染策略"><button type="button" class="fx8-on" aria-selected="true" role="tab" data-fx8-mode="native">NATIVE</button><button type="button" role="tab" aria-selected="false" data-fx8-mode="frames">FRAMES</button><button type="button" role="tab" aria-selected="false" data-fx8-mode="static">STATIC</button></div></div>
+   <div class="fx8-workspace"><div class="fx8-report-area"><div class="fx8-viewport-head"><span><span class="fx8-dot"></span> DOCUMENT PREVIEW / 文档实时视图</span><b id="fx8-preview-status">native · 本页示例组件</b></div><div id="fx8-report" class="fx8-report" aria-live="polite"></div></div><aside class="fx8-code-area"><div class="fx8-code-head"><small>SCHEMA / BLOCK INSPECTOR</small><h4>结构不只是一张截图</h4><p>交互改变 state；内容仍由同一个 RichDocument 管理。下面是可导出的规范块交换投影示例。</p></div><div class="fx8-code-meta"><span id="fx8-case-name">widget.SUPPLY_DEMAND</span><span id="fx8-block-count">6 BLOCKS</span></div><pre id="fx8-json" tabindex="0" aria-label="规范块示例 JSON"></pre><div class="fx8-actions"><button type="button" id="fx8-export-json">导出 blocks.json ↧</button><button type="button" id="fx8-export-html">导出当前离线 HTML ↧</button></div><div class="fx8-micro"><b>权威关系：</b> blocks.json 是 RichDocument 的规范化交换投影，不能成为并列的第二份文档权威。当前按钮只导出此展示的演示数据。</div></aside></div>
+   <div class="fx8-mechanism"><article><small>01 / NATIVE</small><h4>可计算的交互组件</h4><p>注册的受控组件读取类型化数据与 state，滑杆、曲线和结果同步更新；不运行模型生成的任意 JSX。</p></article><article><small>02 / FRAMES</small><h4>有限状态的快照组</h4><p>目标形态是把经过校核的状态录为可切换帧；本页仅模拟离散状态，不代表已采集真实帧。</p></article><article><small>03 / STATIC</small><h4>单张状态与静态回退</h4><p>只有快照时保留说明、出处和冻结状态；组件不可用时继续回退到表格或文字。</p></article></div>
+  </div>
+  <div class="fx8-bottom-grid"><div class="fx8-shell"><div class="fx8-panel-heading"><div><small>CLASSIFIER / REGISTRY</small><h3>五类源片段，对应独立处理路径</h3></div><span>类型优先 · 签名兜底 · 快照最后</span></div><div class="fx8-type-list" id="fx8-type-list"><button class="fx8-picked" data-fx8-kind="typed" type="button"><b>A</b><span>matched_type<br><small>类型化组件</small></span></button><button data-fx8-kind="layout" type="button"><b>B</b><span>DIL / Layout<br><small>结构化嵌套</small></span></button><button data-fx8-kind="stateful" type="button"><b>C</b><span>useState / JSX<br><small>有状态签名</small></span></button><button data-fx8-kind="snapshot" type="button"><b>D</b><span>SVG Snapshot<br><small>页面快照</small></span></button><button data-fx8-kind="prompt" type="button"><b>E</b><span>Async Image<br><small>提示词素材</small></span></button></div><div id="fx8-type-detail" class="fx8-type-detail" aria-live="polite"></div></div>
+   <div class="fx8-shell"><div class="fx8-panel-heading"><div><small>SIX DOMAINS × DELIVERY</small><h3>富组件不是独立 Sub-Harness，而是共用的成果引擎</h3></div></div><div class="fx8-domain-stack"><div class="fx8-domain-box"><b>Knowledge / Policy / Project</b><span>EvidenceItem · Claim · 适用矩阵 · 项目事实</span></div><div class="fx8-domain-box"><b>Geo / Design / Visual</b><span>GeoResult · 原生模型 · DiagramSpec · ImageBrief</span></div><div class="fx8-down-arrow">↓ 内容与证据适配</div><div class="fx8-domain-focus"><b>RichDocument · Block Registry · Renderer</b><span>一致的 block_id / revision / evidence_ref / dataset_ref / model_ref</span></div><div class="fx8-down-arrow">↓ 完成门与导出</div><div class="fx8-domain-box"><b>Delivery / QC / Task Core</b><span>可编辑 Markdown · 自包含 HTML · 结构化源 · 资产清单</span></div></div><p class="fx8-domain-foot">AI 生成的是内容或模板候选；模板注册、业务参数保存、正式导出与成果接受仍须走现有命令、权限和版本体系。</p></div></div>
+  <div class="fx8-roadmap"><div><small>MIGRATION / IMPLEMENTATION CONTRACT</small><h3>迁移次序不变：分类 → 块 → 注册 → 渲染 → 验收 → 多目标</h3><p>沿用你第 57 号文档的 P1–P6 方案，不改变原有 P9 / P10 排期；先迁移高频块，再覆盖复杂交互。</p></div><div class="fx8-roadmap-grid"><span><b>P1</b> 分类器与块模型</span><span><b>P2</b> 版本化注册表</span><span><b>P3</b> 离线 HTML Renderer</span><span><b>P4</b> 回退与去重</span><span><b>P5</b> 质量验证器</span><span><b>P6</b> 多格式交付</span></div></div>
+  <p class="fx8-disclaimer">本展区仅实现浏览器级的交互样例和导出示范，不表明 ChatGPT 私有组件协议已被复现，也不表示 Personal Harness 正式 RichDocument / Registry / Export 运行时已经接入。图表与案例数值均为说明性演示，不构成政策结论或 GIS 专业计算。</p>
  </div>
 </section>
 
@@ -1427,7 +1596,7 @@ $$('#phx-router [data-route]').forEach(b=>b.addEventListener('click',()=>{let v=
 const N=(id,title,sub,x,y,w=172,h=66,kind='')=>({id,title,sub,x,y,w,h,kind});
 const diagrams={
  customer:{title:'对使用者：从一个问题到可继续工作的成果',caption:'产品视角：同一个项目空间组织知识、政策、空间分析与设计成果，专业人员始终能看到证据和待审定项。',nodes:[N('task','项目问题','范围 · 目标 · 材料',30,274,190,76,'gold'),N('knowledge','知识与证据','原文 · OCR · INDEX',291,72,220,76,'evidence'),N('policy','政策与项目','条件 · 效力 · 事实',291,263,220,76),N('geo','Geo 双引擎','开源 GIS · Pro 桥接',291,454,220,76),N('research','深入研究','Agentic RAG',615,72,210,76,'core'),N('design','方案与表达','设计 · AI 画布 · Visual',615,454,210,76),N('out','成果项目制作','报告 · 图件 · 数据包',897,263,200,76,'gold')],edges:[['task','knowledge'],['task','policy'],['task','geo'],['knowledge','research'],['research','out'],['policy','out'],['geo','design'],['design','out']],details:{task:['项目问题','项目目标、输入材料、希望得到的专业成果在同一处确定。','不需要把项目重新拆成多个互不相干的聊天会话。'],knowledge:['知识与证据','把正式资料与临时资料区分管理，通过原文、页码和来源版本支撑研究。','搜索摘要不能直接当作完整原文或政策依据。'],policy:['政策与项目','核对项目主体、时间、地域、现有手续及政策适用条件。','未确认的事实不能被语言模型自动填满。'],geo:['Geo 双引擎','一套 Geo 专业结果契约对应两条执行路径：开源 GIS 库 Worker（GeoPandas、Shapely、GDAL 等）与 ArcGIS Pro / ArcPy 原生桥接（Pro Bridge、APLE / ANTR）。按任务能力和数据要求选择。','两种执行器不保证逐项等价；空间计算须保存来源、CRS、参数、单位、工具版本和真实回执。'],research:['深入研究','Agent 根据证据缺口自选检索策略，多轮回读与交叉核验后形成分析。','保持预算和检索边界，必要时弃权或交人工。'],design:['方案与表达','在同一个项目中组织空间策略、原生建模、图件与面向 Visual 的生成任务。','AI 效果图与候选彩平图不代替真实专业模型。'],out:['成果项目制作','Project 确定项目事实和成果基线；跨域 Delivery 组织咨询报告、规划图件、数据成果及设计模型的编制、装配、质检和交付。','Delivery 不是第七个领域：不重新创造专业事实，交付需图文表一致性检查和 Task Core 接受。']}},
- architect:{title:'对架构师：一个 Task Core、六领域能力与三大平面',caption:'架构视角：Task Core 是控制权威；Runner 是执行平面；Source、INDEX、Evidence 与领域对象各自拥有明确数据权威。',nodes:[N('request','WebUI / 桌面','统一语义命令',463,10,214,64),N('core','Task Core','权限 · 租约 · fence',463,110,214,68,'gold'),N('runner','Runner + Subagent','并行编排 · Model Router',463,218,214,68,'core'),N('know','Knowledge','Source · INDEX',16,355,174,66,'evidence'),N('pol','Policy','Claim · 适用性',203,355,174,66),N('proj','Project','项目事实',390,355,174,66),N('geo','Geo','开源 GIS / Pro',577,355,174,66),N('design','Design','原生模型',764,355,174,66),N('visual','Visual','DiagramSpec · Image Workflow',951,355,174,66),N('evi','EvidencePacket','冻结证据',180,495,235,66,'evidence'),N('asset','领域资产与回执','身份 · 版本 · 血缘',453,495,235,66),N('delivery','Delivery 制作与交付','报告 · 图件 · 数据 · QC',767,495,235,66,'gold')],edges:[['request','core'],['core','runner'],['runner','know'],['runner','pol'],['runner','proj'],['runner','geo'],['runner','design'],['runner','visual'],['know','evi'],['pol','evi'],['proj','asset'],['geo','asset'],['design','asset'],['visual','asset'],['evi','delivery'],['asset','delivery']],details:{request:['统一入口','WebUI、CLI、营造师桌面和外部 Agent 共享业务任务身份。','会话标识不能代替 Task Core 的任务身份。'],core:['Task Core','负责授权、计划接受、执行许可、租约、fence、取消、预算和成果接受。','不把权限与业务验收交给运行时图或 LLM。'],runner:['有界 Runner','根据 Task Core 接受的计划，在 LangGraph、有界 Agent Loop 与可选动态工作流之间选择执行方式；支持 Planner 生成任务依赖，并行派发角色化 Subagent，汇总结构化结果，由 Model Router 为每个角色绑定独立 LLM / VLM / 工具链。','同一 attempt 只允许一条受控驱动链；Subagent 与模型都不拥有 Task Core 控制权威。'],know:['Knowledge','正式 INDEX 单一受控写入；连接临时材料与 Web Retrieval。','Wiki / 临时通道不能成为第二套正式知识底座。'],pol:['Policy','核对条款效力、地域时点和事实条件并产出 Claim。','知识检索相关度不构成法定适用判断。'],proj:['Project','管理项目事实、材料缺口、约束和冻结的分析基线。','不能用写作替代资料核实。'],geo:['Geo','Geo Core 统一空间对象、GeoTask、GeoResult 和数据口径；在开源 GIS 分析 Worker 与 ArcGIS Pro 原生桥接之间按 CapabilitySpec 选择。后者覆盖 ArcPy、活动工程上下文与 APLE / ANTR 原生制图。','两条路径共享结果和回执契约，不默认同算法等价；Viewer 不提供正式量测权威。'],design:['Design','管理参数设计与原生工程模型、候选方案及变更。','真实交付需原生软件保存和重开回读。'],visual:['Visual','将 Claim 和 AnalysisGraph 转成可编辑 DiagramSpec、分析图、彩平图、总平图及受控 AI 候选图像，并统一调度 ComfyUI、本地开源模型和闭源 API。','表现不能凭空制造事实，AI 图像也不得替代专业计算与原生设计交付。'],evi:['EvidencePacket','按任务版本冻结 SourceRef / EvidenceItem 的引用和来源定位。','来源更新不能静默覆盖历史证据包。'],asset:['领域资产与回执','统一身份、计算、输出与依赖，便于失败对账和下游失效。','success 的工具回执不等于专业审定。'],delivery:['Delivery 制作与交付','跨域成果制作能力：DeliveryPlan、RichDocument、DocumentSpec / RenderPlan、APLE / ANTR、原生工程包、质量清单及资产归档；与 Project 的项目事实和各专业真实结果保持引用关系。','Delivery 不在装配阶段自行创造政策事实或 GIS 数值；业务接受由 Task Core 决定。']}},
+ architect:{title:'对架构师：一个 Task Core、六领域能力与三大平面',caption:'架构视角：Task Core 是控制权威；Runner 是执行平面；Source、INDEX、Evidence 与领域对象各自拥有明确数据权威。',nodes:[N('request','WebUI / 桌面','统一语义命令',463,10,214,64),N('core','Task Core','权限 · 租约 · fence',463,110,214,68,'gold'),N('runner','Runner + Subagent','并行编排 · Model Router',463,218,214,68,'core'),N('know','Knowledge','Source · INDEX',16,355,174,66,'evidence'),N('pol','Policy','Claim · 适用性',203,355,174,66),N('proj','Project','项目事实',390,355,174,66),N('geo','Geo','开源 GIS / Pro',577,355,174,66),N('design','Design','原生模型',764,355,174,66),N('visual','Visual','DiagramSpec · Image Workflow',951,355,174,66),N('evi','EvidencePacket','冻结证据',180,495,235,66,'evidence'),N('asset','领域资产与回执','身份 · 版本 · 血缘',453,495,235,66),N('delivery','Delivery 制作与交付','报告 · 图件 · 数据 · QC',767,495,235,66,'gold')],edges:[['request','core'],['core','runner'],['runner','know'],['runner','pol'],['runner','proj'],['runner','geo'],['runner','design'],['runner','visual'],['know','evi'],['pol','evi'],['proj','asset'],['geo','asset'],['design','asset'],['visual','asset'],['evi','delivery'],['asset','delivery']],details:{request:['统一入口','WebUI、CLI、营造师桌面和外部 Agent 共享业务任务身份。','会话标识不能代替 Task Core 的任务身份。'],core:['Task Core','负责授权、计划接受、执行许可、租约、fence、取消、预算和成果接受。','不把权限与业务验收交给运行时图或 LLM。'],runner:['有界 Runner','根据 Task Core 接受的计划，在 LangGraph、有界 Agent Loop 与可选动态工作流之间选择执行方式；支持 Planner 生成任务依赖，并行派发角色化 Subagent，汇总结构化结果，由 Model Router 为每个角色绑定独立 LLM / VLM / 工具链。','同一 attempt 只允许一条受控驱动链；Subagent 与模型都不拥有 Task Core 控制权威。'],know:['Knowledge','正式 INDEX 单一受控写入；连接临时材料与 Web Retrieval。','Wiki / 临时通道不能成为第二套正式知识底座。'],pol:['Policy','核对条款效力、地域时点和事实条件并产出 Claim。','知识检索相关度不构成法定适用判断。'],proj:['Project','管理项目事实、材料缺口、约束和冻结的分析基线。','不能用写作替代资料核实。'],geo:['Geo','Geo Core 统一空间对象、GeoTask、GeoResult 和数据口径；在开源 GIS 分析 Worker 与 ArcGIS Pro 原生桥接之间按 CapabilitySpec 选择。后者覆盖 ArcPy、活动工程上下文与 APLE / ANTR 原生制图。','两条路径共享结果和回执契约，不默认同算法等价；Viewer 不提供正式量测权威。'],design:['Design','管理参数设计与原生工程模型、候选方案及变更。','真实交付需原生软件保存和重开回读。'],visual:['Visual','将 Claim 和 AnalysisGraph 转成可编辑 DiagramSpec、分析图、彩平图、总平图及受控 AI 候选图像，并统一调度 ComfyUI、本地开源模型和闭源 API。','表现不能凭空制造事实，AI 图像也不得替代专业计算与原生设计交付。'],evi:['EvidencePacket','按任务版本冻结 SourceRef / EvidenceItem 的引用和来源定位。','来源更新不能静默覆盖历史证据包。'],asset:['领域资产与回执','统一身份、计算、输出与依赖，便于失败对账和下游失效。','success 的工具回执不等于专业审定。'],delivery:['Delivery 制作与交付','跨域成果制作能力：DeliveryPlan、RichDocument、ph.blocks、Registry、Renderer、DocumentSpec / RenderPlan、APLE / ANTR、质量清单和原生工程包；与六领域真实结果保持证据引用及版本关系。','Delivery 不在装配阶段自行创造政策事实或 GIS 数值；业务接受由 Task Core 决定。']}},
  developer:{title:'对开发者：稳定契约连接可替换的执行组件',caption:'工程视角：入口提交语义命令，Task Core 产生执行许可；Runner 和 Adapter 只是可替换执行层，真实回执与证据进入版本化存储。',nodes:[N('ui','WebUI / OpenCode','营造师桌面 · CLI',20,70,178,76),N('gateway','Command Gateway','命令封套 / 幂等键',232,70,178,76),N('task','Task Core','Attempt · Lease · Fence',444,70,178,76,'gold'),N('runner','Workflow Runner','LangGraph / Dynamic',656,70,178,76,'core'),N('adapter','Provider + MCP','能力适配 · 工具调用',868,70,252,76),N('schema','Schema / Skill','输入输出 · 方法规程',185,267,206,76),N('receipt','Receipt / Checkpoint','失败状态 · 对账',468,267,206,76),N('source','Source / INDEX','单一正式索引入口',755,267,206,76,'evidence'),N('workers','专业执行器','开源 GIS / Pro / DCC',880,452,224,78),N('claims','领域结果','Evidence / Geo / Design',455,452,238,78),N('export','成果生产 / Delivery','RichDocument · 原生包',74,452,224,78,'gold')],edges:[['ui','gateway'],['gateway','task'],['task','runner'],['runner','adapter'],['schema','runner'],['runner','receipt'],['adapter','source'],['adapter','workers'],['source','claims'],['workers','claims'],['receipt','claims'],['claims','export']],details:{ui:['入口适配','现成桌面交互与自有 WebUI 共享统一命令和查询。','页面展示状态不是可靠的后端执行状态。'],gateway:['Command Gateway','CommandEnvelope 提供幂等、目标身份、预期修订和受控授权映射。','同键异参请求必须拒绝，不能隐式重复副作用。'],task:['Task Core','控制 TaskEnvelope、PlanRevision、Attempt、lease、fence 和接受。','当前版本和授权关系必须在每次写入前重验。'],runner:['Workflow Runner','有界状态、条件分支、并行任务、PlanPatch 和检查点。','代码式 workflow 是可选 Runner，不可变成第二任务库。'],adapter:['Provider + MCP','可替换模型、DeepSeek/Exa Web Retrieval 与各类 MCP 服务。','统一能力规格包括作用域、副作用与取消/验证方式。'],schema:['Schema / Skill','统一 CapabilitySpec 和任务 Profile，输出可验证类型。','业务方法不能硬编码到某个外部 Agent 私有提示词中。'],receipt:['Receipt / Checkpoint','记录真实工具运行、停止确认、unknown 和 recovery_pending。','超时不等于已停止，先对账后恢复。'],source:['Source / INDEX','SourceRef、版本、OCR 与 BM25/BGE-M3 索引经受控通道发布。','外部网页抓取不会自动写进正式索引。'],workers:['专业执行器','Geo Core 分别调度隔离的开源 GIS 库 Worker 与 ArcGIS Pro / ArcPy / Pro Bridge；Design 使用独立 DCC 执行器；Visual 组织 ComfyUI 和闭源模型 API。','ArcGIS Pro 许可、原生文件锁和不同 GIS 引擎结果口径分别验证，不将 ArcPy 依赖塞进通用 Agent 环境。'],claims:['领域结果','EvidencePacket、Claim、GeoResult、DesignResult 等结构化产物。','不把截图当成专业计算和几何真值。'],export:['成果生产 / Delivery','Project 组织工作事实和范围，Delivery 按业务成果 Profile 生成 RichDocument、规划制图、图数表和原生资产包，完成一致性检查、回读与版本归档。','文件导出成功只证明技术完成；专业审定和 Task Core 成果接受另行判断。']}},
  specialist:{title:'对专业负责人：证据—约束—计算—方案—交付的业务链',caption:'专业视角：不同领域不是并列的聊天助手，而是共享证据与版本的协作环节；任何结论都能回到文件、项目事实或真实计算。',nodes:[N('intake','咨询任务','选址 / 政策 / 规划 / 设计',39,70,220,78,'gold'),N('materials','资料与知识','原件 / INDEX / Web',314,70,220,78,'evidence'),N('project','Project 事实','区位 / 权属 / 手续',590,70,220,78),N('policy','Policy 判定','条款 / 时点 / 限制',866,70,220,78),N('geo','Geo 双路径','开源库 / ArcGIS Pro',866,287,220,78),N('design','Design 设计','CAD / Rhino / GH',590,287,220,78),N('visual','Visual 生图与表达','分析图 / 彩平图 / 效果图',314,287,220,78),N('delivery','成果制作 Delivery','文本 / 图件 / 原生包',39,287,220,78,'gold'),N('review','完成门与审定','文表图一致 · 必要人工',427,475,306,76,'gold')],edges:[['intake','materials'],['materials','project'],['project','policy'],['policy','geo'],['geo','design'],['design','visual'],['visual','delivery'],['delivery','review'],['policy','review']],details:{intake:['咨询任务','按专业任务类型约定研究范围、工作深度及交付用途。','确定成果是概念演示、研究稿还是可用于正式报审。'],materials:['资料与知识','采用统一的正式 INDEX、外部资料和公开搜索通道组织可核验证据。','未核验的网页片段仅作为线索。'],project:['Project 事实','梳理项目区位、权属、建设条件、时间链和已有审批。','事实冲突应保留，不用模型单方面覆盖。'],policy:['Policy 判定','比对现行法规、历史规则、政策效力和适用主体。','研究推断与正式条款应分栏表达。'],geo:['Geo 双路径','按任务选择开源库批处理（GeoPandas / Shapely / GDAL / PyProj）或 ArcGIS Pro 原生桥接（ArcPy Worker、Pro Bridge、APLE / ANTR），统一返回 GeoResult 和执行回执。','ArcGIS 原生工程与开源格式各有适用条件，须核对坐标系、单位、精度、工具版本和结果可比性。'],design:['Design 设计','利用真实参数、场地和原生软件建立候选方案与变更记录。','效果图只是概念表达。'],visual:['Visual 生图与表达','将真实判断和专业数据转成可编辑的关系图、分析图、彩平图、总平图，并在统一控制下生成鸟瞰图、效果图等候选图像；由 Visual Harness 统一调度 ComfyUI、本地开源模型与闭源图像工作流。','样式修改不能改变政策事实或 GIS 数值，AI 图像也不能替代真实 GIS 计算、法定图件和原生设计成果。'],delivery:['成果制作 Delivery','Project 管理项目事实及交付要求，Delivery 跨域组织研究报告、规划文本、专题图、数据库、CAD/三维原生模型及 AI 表达候选，统一模板、图文表一致性检查、审查记录和归档。','制作流程可拥有专项 Skill / Workflow，但 Delivery 不拥有第二套项目事实或任务控制权威。'],review:['完成门与审定','核对文表图关系、证据、数据、专业计算、原生可用性和适用范围。','技术检查与用户业务接受是两类不同决定。']}}
 };
@@ -1547,6 +1716,131 @@ all('[data-mx7-case]').forEach(b=>b.addEventListener('click',()=>{current=b.data
 q('#mx7-profile').addEventListener('change',e=>{profile=e.target.value;overrides={};imageEngine=profile==='local'?'open':profile==='quality'?'closed':'hybrid';render()});
 all('[data-mx7-stage]').forEach(b=>b.addEventListener('click',()=>{stage=b.dataset.mx7Stage;renderTrace()}));
 render();
+})();
+
+</script>
+<script id="fx8-rich-script">
+/* v8 isolated: offline interactive showcase. All content is local synthetic sample data. */
+(()=>{
+'use strict';
+const root=document.getElementById('fx8-rich');if(!root)return;
+const $=(s)=>root.querySelector(s);
+const $$=(s)=>[...root.querySelectorAll(s)];
+const state={scene:'economy',mode:'native',a:100,frame:1,policyTab:0,layer:'green',kind:'typed',arch:'source'};
+const arch=[
+{id:'source',head:'外部来源',sub:'HTML / JSON / MD',short:'01 / SOURCE',title:'来源与导入',desc:'解析历史 ChatGPT 页面、其他 AI 输出与 Markdown 文档，识别文本、结构、图表、元数据、引用和快照。',guard:'原始文件保留来源身份，不执行其中的任意 JavaScript / JSX；输入内容始终视为数据。'},
+{id:'classify',head:'Classifier',sub:'递归识别 / 路由',short:'02 / CLASSIFY',title:'递归内容分类器',desc:'不能仅依赖顶层标签判断。识别 matched_type、DIL 结构、useState 特征、已有 SVG 快照与图片提示词；保留混合嵌套。',guard:'类别识别只是候选技术分类。没有元数据时可以退化，不保证复刻私有组件语义。'},
+{id:'rich',head:'RichDocument',sub:'唯一版本化文档',short:'03 / AUTHORITY',title:'RichDocument 文档权威',desc:'记录正文、内容块引用、证据链、数据、当前修订以及渲染所需的版本依赖。',guard:'Task Core 负责成果接受；RichDocument 是文档权威，blocks.json 只是其规范化交换投影。'},
+{id:'blocks',head:'ph.blocks',sub:'blocks.json / Schema',short:'04 / BLOCKS',title:'规范化块交换层',desc:'为文本、表格、公式、图表、布局、交互组件、图片、引用分别生成有 id、kind、type、state、fallback 的结构。',guard:'必须检查父子关系、类型、版本、数值域与来源定位，禁止将可执行源码直接当作可信组件。'},
+{id:'registry',head:'Registry',sub:'type + version',short:'05 / REGISTRY',title:'受控组件注册表',desc:'通过 (source, type, version) 选择经过审核的模板，再决定 native、frames 或 static 路径。',guard:'外来或 AI 生成的模板必须先通过准入与版本测试，不能在正式界面直接执行。'},
+{id:'render',head:'Renderer',sub:'native / frames / static',short:'06 / RENDER',title:'渲染器与组件隔离',desc:'可计算的组件原生运行；离散状态用帧集合表达；未知内容用静态快照、表格或文字逐级降级。',guard:'每块独立渲染和报错；Widget Host / Model Runtime 只加载受控实现，禁止任意脚本获得工具权限。'},
+{id:'deliver',head:'Validator / Export',sub:'HTML + MD + Assets',short:'07 / DELIVERY',title:'验证、离线构建与成果接受',desc:'检查内容一致性、图表数据、离线资源、交互状态、移动端、导出回读与引用，再由 Delivery 打包。',guard:'单文件禁用 CDN；显示正常不等于事实正确，成果需按用途经过专业 QC 与 Task Core 接受。'}
+];
+function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderArch(){
+ const x0=15,w=150,gap=17,y=54,h=93;
+ const edge=arch.slice(0,-1).map((n,i)=>{const x=x0+(w+gap)*i+w;return `<path d="M${x} ${y+h/2} H${x+gap-3}" class="fx8-svg-edge" marker-end="url(#fx8-arr)"/>`;}).join('');
+ const nodes=arch.map((n,i)=>{const x=x0+(w+gap)*i;return `<g data-fx8-arch="${n.id}" tabindex="0" role="button" aria-label="${esc(n.title)}" class="fx8-svg-node ${state.arch===n.id?'fx8-active':''}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12"/><text x="${x+12}" y="${y+30}" class="fx8-name">${esc(n.head)}</text><text x="${x+12}" y="${y+54}" class="fx8-desc">${esc(n.sub)}</text><text x="${x+12}" y="${y+75}" class="fx8-desc">${String(i+1).padStart(2,'0')} / 07</text></g>`;}).join('');
+ $('#fx8-architecture-svg').innerHTML=`<defs><marker id="fx8-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 L9 5 L1 9" stroke="#7c9da4" fill="none" stroke-width="1.4"/></marker></defs><text x="15" y="28" fill="#759297" font-size="12" letter-spacing="2">CONTENT INGESTION</text><text x="1158" y="178" fill="#759297" font-size="11" text-anchor="end">PH / DOCUMENT RUNTIME → DELIVERY</text>${edge}${nodes}`;
+ $$('[data-fx8-arch]').forEach(el=>{
+  const select=()=>{state.arch=el.dataset.fx8Arch;renderArch();};
+  el.addEventListener('click',select);
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}});
+ });
+ const cur=arch.find(n=>n.id===state.arch);
+ $('#fx8-node-num').textContent=cur.short;$('#fx8-node-title').textContent=cur.title;$('#fx8-node-desc').textContent=cur.desc;$('#fx8-node-boundary').textContent=cur.guard;
+}
+const types={
+ typed:{title:'A 类 / 已类型化的富组件',note:'若来源有 matched_type 或明确组件类型，优先查询 (source,type,version) 注册表并用已审核 native 模板表达。',example:'widget.SUPPLY_AND_DEMAND → native / snapshot'},
+ layout:{title:'B 类 / DIL 声明式结构',note:'递归识别 box、grid、row 与内部图表或图像。仅解析可支持的结构到 layout.* 块，不承诺运行任意 DIL。',example:'<grid> + Chart → layout.grid + chart.line'},
+ stateful:{title:'C 类 / 状态与表达式',note:'识别 useState 等信号，尝试已登记的签名映射；复杂未知交互退化为可验证的 frames 或 static，不编译陌生 JSX。',example:'useState + SVG → known signature → frames'},
+ snapshot:{title:'D 类 / 只有页面快照',note:'以固定尺寸与原始字体约束保存 SVG / PNG，附标题、说明、位置和无法交互的限制。',example:'figure.os-svg → image.snapshot'},
+ prompt:{title:'E 类 / 只有生图提示词',note:'AsyncImage query 只能作为 image.prompt 或候选素材请求；离线成果须另有已获取的图片资源。',example:'AsyncImage(query) → image.prompt / text fallback'}
+};
+function renderType(){
+ $$('[data-fx8-kind]').forEach(b=>{b.classList.toggle('fx8-picked',b.dataset.fx8Kind===state.kind);b.setAttribute('aria-pressed',String(b.dataset.fx8Kind===state.kind));});
+ const d=types[state.kind];$('#fx8-type-detail').innerHTML=`<h4>${esc(d.title)}</h4><p>${esc(d.note)}</p><code>${esc(d.example)}</code>`;
+}
+function chartSvg(a){
+ const x0=42,y0=220,xW=480,yH=191,x=q=>x0+(q/140)*xW,y=p=>y0-(p/38)*yH;
+ const pstar=(a-20)/4,qstar=20+2*pstar;
+ const grid=[0,20,40,60,80,100,120,140].map(v=>`<line x1="${x(v)}" y1="29" x2="${x(v)}" y2="220" stroke="#ecf1ee"/><text x="${x(v)}" y="239" text-anchor="middle">${v}</text>`).join('') + [0,10,20,30].map(v=>`<line x1="42" y1="${y(v)}" x2="522" y2="${y(v)}" stroke="#ecf1ee"/><text x="33" y="${y(v)+4}" text-anchor="end">${v}</text>`).join('');
+ return `<svg class="fx8-chart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 264" role="img" aria-label="演示供给与需求曲线，均衡价格 ${pstar}，均衡数量 ${qstar}"><rect width="560" height="264" fill="#fff"/>${grid}<path d="M42 29 V220 H522" fill="none" stroke="#789499" stroke-width="1.7"/><path d="M${x(20)} ${y(0)} L${x(96)} ${y(38)}" stroke="#53958c" stroke-width="3" fill="none"/><path d="M${x(a)} ${y(0)} L${x(a-76)} ${y(38)}" stroke="#c99143" stroke-width="3" fill="none"/><path d="M${x(qstar)} ${y(pstar)} V220 M42 ${y(pstar)} H${x(qstar)}" stroke="#b7a36f" stroke-dasharray="5 5" stroke-width="1.4" fill="none"/><circle cx="${x(qstar)}" cy="${y(pstar)}" r="5.7" fill="#263e49" stroke="#fff" stroke-width="2"/><text x="${x(qstar)+9}" y="${y(pstar)-10}" fill="#263e49">E (Q=${qstar}, P=${pstar})</text><text class="fx8-legend" x="387" y="24" fill="#c99143">— 需求 D</text><text class="fx8-legend" x="477" y="24" fill="#53958c">— 供给 S</text><text x="528" y="240">Q</text><text x="28" y="25">P</text></svg>`;
+}
+function mapSvg(layer){
+ const colors={green:'#8db69d',road:'#d8b28a',building:'#a6bec4'};
+ return `<svg class="fx8-mini-map" viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="示意 GIS 总平面，突出显示 ${esc(layer)} 资源"><rect width="560" height="250" fill="#f4f6f2"/><path d="M-10 120 L570 170" stroke="#d4d6cc" stroke-width="24"/><path d="M-10 120 L570 170" stroke="${colors.road}" stroke-width="${layer==='road'?15:9}"/><path d="M350 -10 L300 260" stroke="#dedbc9" stroke-width="40"/><path d="M350 -10 L300 260" stroke="${colors.road}" stroke-width="${layer==='road'?23:15}"/><path d="M46 27 L277 27 L272 99 L173 109 L103 79Z" fill="${colors.green}" fill-opacity=".9" stroke="${layer==='green'?'#bc8a48':'#7fada0'}" stroke-width="${layer==='green'?4:1.5}"/><path d="M380 178 L525 190 L515 231 L363 234Z" fill="${colors.green}" stroke="${layer==='green'?'#bc8a48':'#7fada0'}" stroke-width="${layer==='green'?4:1.5}"/><g fill="${colors.building}" stroke="${layer==='building'?'#c18a3e':'#6f98a0'}" stroke-width="${layer==='building'?4:1.3}"><rect x="62" y="146" width="83" height="55" rx="3"/><rect x="161" y="172" width="88" height="51" rx="3"/><rect x="384" y="39" width="58" height="89" rx="3"/><rect x="451" y="55" width="75" height="78" rx="3"/></g><g fill="#365d63" font-size="12"><text x="135" y="62">绿地</text><text x="105" y="177">建筑</text><text x="372" y="163">道路</text></g><g transform="translate(495 15)"><circle cx="12" cy="12" r="11" fill="#fff" stroke="#7d999a"/><path d="M12 2 L16 17 L12 14 L8 17Z" fill="#4a6871"/><text x="12" y="33" font-size="9" text-anchor="middle" fill="#5c767b">N</text></g><text x="16" y="239" font-size="10" fill="#7c8d84">示意空间结构 · 无真实 CRS / 不可用于测算</text></svg>`;
+}
+const modeLabels={native:'native · 本页演示组件',frames:'frames · 离散状态模拟',static:'static · 冻结示意'};
+function sharedHeader(title,subtitle,tag){return `<div class="fx8-doc-tag">${esc(tag)} / RICH DOCUMENT DEMO</div><h3>${esc(title)}</h3><p class="fx8-doc-summary">${esc(subtitle)}</p><div class="fx8-doc-metadata"><span>文档版本 · demo.r8</span><span>数据性质 · 虚构演示</span><span>证据状态 · 未用于正式业务</span></div>`;}
+function economy(){
+ const a=state.mode==='native'?state.a:state.mode==='frames'?[80,100,120][state.frame]:100;
+ const p=(a-20)/4,q=20+2*p;
+ const ctl=state.mode==='native'?`<label class="fx8-chart-control">需求截距 A <input id="fx8-control-slider" type="range" min="70" max="130" step="2" value="${a}" aria-label="需求函数截距"/><output id="fx8-a-output">${a}</output></label>`:state.mode==='frames'?`<div class="fx8-frame-nav" aria-label="离散快照状态">${[80,100,120].map((v,i)=>`<button type="button" data-fx8-frame="${i}" class="${i===state.frame?'fx8-selected':''}">${v} / 第 ${i+1} 帧</button>`).join('')}</div>`:`<div class="fx8-evidence-note"><b>STATIC</b><span>本块使用固定状态 A = 100 的快照，不提供连续参数计算。</span></div>`;
+ return sharedHeader('市场均衡：需求变化如何影响价格？','同一篇经济学报告内混排文字、交互模型、数据表、概念解释与引用区。可切换可计算组件、有限录帧及静态兜底。','ECONOMICS') + `<div class="fx8-rich-claim"><b>教学模型：</b>需求 Qd = A − 2P，供给 Qs = 20 + 2P。下图用虚构数据解释均衡形成机制，非统计观测。</div><div class="fx8-widget"><div class="fx8-widget-heading"><b>widget.SUPPLY_AND_DEMAND</b><small>${state.mode.toUpperCase()} / VERSION 1</small></div><div class="fx8-widget-body">${ctl}<div id="fx8-graph-host">${chartSvg(a)}</div><div class="fx8-widget-info"><span>均衡价格 P*<strong id="fx8-eq-price">${p}</strong></span><span>均衡数量 Q*<strong id="fx8-eq-quantity">${q}</strong></span></div></div></div><h4>结构化计算结果（table.data）</h4><table class="fx8-data-table"><thead><tr><th>变量</th><th>数值</th><th>数据含义</th></tr></thead><tbody><tr><td>A</td><td id="fx8-table-a">${a}</td><td>需求截距</td></tr><tr><td>P*</td><td id="fx8-table-p">${p}</td><td>供需相等的价格</td></tr><tr><td>Q*</td><td id="fx8-table-q">${q}</td><td>供需相等的数量</td></tr></tbody></table><div class="fx8-evidence-note"><b>数据与结论</b><span>图、表、说明使用同一状态。正式工程中的指标应来自已审核的 Model Runtime，而不是由 DOM 视觉位置反推。</span></div>`;
+}
+function policy(){
+ const tab=state.mode==='static'?0:state.mode==='frames'?state.frame:state.policyTab;
+ const labels=['政策依据','项目事实','适用结论'];
+ const descriptors=[
+ '核对原文、发布与施行时点；文号、效力、地域适用性全部保留待核。',
+ '比对土地权属、建设内容、用地范围和既有手续；缺失资料以待补列出。',
+ '只形成有条件的候选判断，证据不足不得直接生成“可以审批”等结论。'];
+ const ctl=state.mode==='native'||state.mode==='frames'?`<div class="fx8-policy-switch">${labels.map((v,i)=>`<button type="button" data-fx8-policy="${i}" class="${i===tab?'fx8-selected':''}">${v}</button>`).join('')}</div>`:`<div class="fx8-evidence-note"><b>STATIC</b><span>固定显示政策依据阶段。其他阶段未提供可切换数据。</span></div>`;
+ return sharedHeader('建设项目用地：证据如何支持政策适用性？','Project 的事实、Knowledge 的 EvidencePacket 和 Policy 的条件判断，共享版本后输出可审查的研究报告与关系图。','POLICY / PROJECT')+`<div class="fx8-rich-claim">重要边界：相关检索命中、政策原文存在、条款现行有效和本项目符合条件，是四个需要分开核验的判断。</div><div class="fx8-widget"><div class="fx8-widget-heading"><b>widget.POLICY_APPLICABILITY / 条件核验视图</b><small>${state.mode.toUpperCase()} / DEMO</small></div><div class="fx8-widget-body">${ctl}<div class="fx8-condition-list"><div class="fx8-condition-row"><span><b>${esc(labels[tab])}</b> · ${esc(descriptors[tab])}</span><strong>待核查</strong></div><div class="fx8-condition-row"><span>支持链：SourceRef → EvidenceItem → Claim</span><strong>未冻结</strong></div><div class="fx8-condition-row"><span>反证 / 缺口 / 适用时点</span><strong>需人工确认</strong></div></div></div></div><h4>证据矩阵（table.evidence）</h4><table class="fx8-data-table"><thead><tr><th>核验维度</th><th>候选材料</th><th>状态</th></tr></thead><tbody><tr><td>政策效力</td><td>原文及历史版本</td><td>待核</td></tr><tr><td>事实证明</td><td>项目资料与批准文件</td><td>待补</td></tr><tr><td>结论适用</td><td>逐项条件矩阵</td><td>未审定</td></tr></tbody></table><div class="fx8-evidence-note"><b>Evidence</b><span>演示没有捏造真实法规、审批结论或引用编号。真实 EvidenceItem 应绑定来源位置和版本。</span></div>`;
+}
+function spatial(){
+ const layer=state.mode==='native'?state.layer:state.mode==='frames'?['building','green','road'][state.frame]:'green';
+ const labels={building:'建筑基底',green:'绿地结构',road:'道路组织'};
+ const ctl=state.mode==='native'||state.mode==='frames'?`<div class="fx8-layer-switch">${Object.entries(labels).map(([key,lab],i)=>`<button type="button" data-fx8-layer="${key}" class="${key===layer?'fx8-selected':''}">${esc(lab)}</button>`).join('')}</div>`:`<div class="fx8-evidence-note"><b>STATIC</b><span>已冻结绿地层的示意图，不提供其它图层切换。</span></div>`;
+ return sharedHeader('场地研究：空间分析、规划图与视觉表达联动','Geo 的真实引擎回执、Design 的原生对象和 Visual 的 DiagramSpec / 生图资产，在同一份 RichDocument 中组合呈现。','URBAN DESIGN / GEO')+`<div class="fx8-rich-claim"><b>两种专业执行：</b>开源 GIS Worker（GeoPandas / Shapely / GDAL）或 ArcGIS Pro Bridge（ArcPy / APLE / ANTR），计算结果应带 CRS、单位、参数和版本回执。</div><div class="fx8-widget"><div class="fx8-widget-heading"><b>diagram.SPATIAL_SYSTEM / GIS 结构视图</b><small>${state.mode.toUpperCase()} / SCHEMATIC</small></div><div class="fx8-widget-body">${ctl}${mapSvg(layer)}<div class="fx8-widget-info"><span>当前关注系统<strong>${labels[layer]}</strong></span><span>数据质量<strong>概念示意</strong></span></div></div></div><h4>成果与来源关系（table.data）</h4><table class="fx8-data-table"><thead><tr><th>领域来源</th><th>富组件类型</th><th>专业边界</th></tr></thead><tbody><tr><td>Geo</td><td>Map / GeoResult</td><td>以真实引擎回执为准</td></tr><tr><td>Visual</td><td>DiagramSpec / image</td><td>表达不改写原始几何</td></tr><tr><td>Delivery</td><td>RichDocument / Asset</td><td>检查文表图一致性</td></tr></tbody></table><div class="fx8-evidence-note"><b>IMAGE BRIEF</b><span>鸟瞰图、彩平图、总平图和效果图可由 Visual 编排 ComfyUI / 闭源模型生成候选，但不能直接认定为专业测量成果。</span></div>`;
+}
+function documentData(){
+ const scene=state.scene,mode=state.mode;
+ const name={economy:'宏观经济 / 供需均衡',policy:'政策研究 / 适用条件',spatial:'城市设计 / 空间研究'}[scene];
+ const a=mode==='native'?state.a:mode==='frames'?[80,100,120][state.frame]:100;
+ const current=scene==='economy'?{demand_A:a,equilibrium_price:(a-20)/4,equilibrium_quantity:20+(a-20)/2}:scene==='policy'?{focus:['policy','project','conclusion'][mode==='static'?0:mode==='frames'?state.frame:state.policyTab],verification:'pending'}:{highlight:mode==='static'?'green':mode==='frames'?['building','green','road'][state.frame]:state.layer,crs:'not_available_demo'};
+ return {
+  schema:'ph.richdocument.exchange.demo/0.1',document_id:'rd_demo_008',revision:8,
+  source:'PersonalHarness / standalone demo',title:name,render_profile:{preferred:mode,allowed:['native','frames','static']},
+  blocks:[
+   {id:'b01',kind:'text',type:'text.heading',data:{title:name}},
+   {id:'b02',kind:'text',type:'text.paragraph',data:{purpose:'illustrative;not authoritative'}},
+   {id:'b03',kind:'typed',type:scene==='economy'?'widget.SUPPLY_AND_DEMAND':scene==='policy'?'widget.POLICY_APPLICABILITY':'diagram.SPATIAL_SYSTEM',version:1,state:current,fallback:{kind:'static',ref:'local_demo_snapshot'}},
+   {id:'b04',kind:'table',type:scene==='policy'?'table.evidence':'table.data',data:{source:'demo_dataset',status:'synthetic'}},
+   {id:'b05',kind:'evidence',type:'cite.ref',evidence:[],data:{review:'requires_verification'}},
+   {id:'b06',kind:'layout',type:'layout.section',data:{children:['b03','b04','b05']}}
+  ],
+  authority_note:'blocks.json is an exchange projection, not a second document authority',
+  validity:'concept_prototype_only'
+ };
+}
+function updateJSON(){const d=documentData();$('#fx8-json').textContent=JSON.stringify(d,null,2);$('#fx8-block-count').textContent=d.blocks.length+' BLOCKS';$('#fx8-case-name').textContent=d.blocks[2].type;$('#fx8-preview-status').textContent=modeLabels[state.mode];}
+function renderDoc(){
+ $$('.fx8-choices [data-fx8-case]').forEach(b=>{const selected=b.dataset.fx8Case===state.scene;b.classList.toggle('fx8-on',selected);b.setAttribute('aria-selected',String(selected));});
+ $$('[data-fx8-mode]').forEach(b=>{const selected=b.dataset.fx8Mode===state.mode;b.classList.toggle('fx8-on',selected);b.setAttribute('aria-selected',String(selected));});
+ $('#fx8-report').innerHTML=state.scene==='economy'?economy():state.scene==='policy'?policy():spatial();
+ const input=$('#fx8-control-slider');if(input) input.addEventListener('input',()=>{
+  state.a=Number(input.value);const a=state.a,p=(a-20)/4,q=20+(a-20)/2;
+  $('#fx8-a-output').textContent=a;$('#fx8-graph-host').innerHTML=chartSvg(a);$('#fx8-eq-price').textContent=p;$('#fx8-eq-quantity').textContent=q;$('#fx8-table-a').textContent=a;$('#fx8-table-p').textContent=p;$('#fx8-table-q').textContent=q;updateJSON();
+ });
+ $$('[data-fx8-frame]').forEach(b=>b.addEventListener('click',()=>{state.frame=Number(b.dataset.fx8Frame);renderDoc();}));
+ $$('[data-fx8-policy]').forEach(b=>b.addEventListener('click',()=>{if(state.mode==='frames')state.frame=Number(b.dataset.fx8Policy);else state.policyTab=Number(b.dataset.fx8Policy);renderDoc();}));
+ $$('[data-fx8-layer]').forEach(b=>b.addEventListener('click',()=>{if(state.mode==='frames')state.frame=['building','green','road'].indexOf(b.dataset.fx8Layer);else state.layer=b.dataset.fx8Layer;renderDoc();}));
+ updateJSON();
+}
+function download(filename,contents,mime){const blob=new Blob([contents],{type:mime});const a=document.createElement('a');const uri=URL.createObjectURL(blob);a.href=uri;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(uri),7000);}
+$('#fx8-export-json').addEventListener('click',()=>download('PH_rich_blocks_demo_v8.json',JSON.stringify(documentData(),null,2),'application/json;charset=utf-8'));
+$('#fx8-export-html').addEventListener('click',()=>{
+  const preview=$('#fx8-report').cloneNode(true);preview.querySelectorAll('button,input').forEach(n=>n.remove());
+  const css=document.getElementById('fx8-rich-style')?.textContent||'';
+  const body=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; script-src 'none'; connect-src 'none'"><title>PersonalHarness 富文档离线示例</title><style>body{background:#e7eeea;font-family:Arial,'Microsoft YaHei',sans-serif;padding:2rem;color:#263e49}.fx8-report{width:min(100%,760px);margin:auto;min-height:0}${css}</style></head><body><main class="fx8-section" style="background:transparent;padding:0"><article class="fx8-report">${preview.innerHTML}</article></main><p style="text-align:center;font-size:12px;color:#617c7e">PersonalHarness 第八版展示 / 静态导出 · 非正式专业成果 · 不含外部依赖</p></body></html>`;
+  download('PH_rich_report_offline_demo_v8.html',body,'text/html;charset=utf-8');
+});
+$$('[data-fx8-case]').forEach(b=>b.addEventListener('click',()=>{state.scene=b.dataset.fx8Case;state.frame=1;state.policyTab=0;renderDoc();}));
+$$('[data-fx8-mode]').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.fx8Mode;state.frame=1;renderDoc();}));
+$$('[data-fx8-kind]').forEach(b=>b.addEventListener('click',()=>{state.kind=b.dataset.fx8Kind;renderType();}));
+renderArch();renderType();renderDoc();
 })();
 
 </script>

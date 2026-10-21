@@ -1,0 +1,80 @@
+{
+  "schema": "ph.richdocument.exchange.demo/0.1",
+  "document_id": "rd_demo_008",
+  "revision": 8,
+  "source": "PersonalHarness / standalone demo",
+  "title": "宏观经济 / 供需均衡",
+  "render_profile": {
+    "preferred": "native",
+    "allowed": [
+      "native",
+      "frames",
+      "static"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "b01",
+      "kind": "text",
+      "type": "text.heading",
+      "data": {
+        "title": "宏观经济 / 供需均衡"
+      }
+    },
+    {
+      "id": "b02",
+      "kind": "text",
+      "type": "text.paragraph",
+      "data": {
+        "purpose": "illustrative;not authoritative"
+      }
+    },
+    {
+      "id": "b03",
+      "kind": "typed",
+      "type": "widget.SUPPLY_AND_DEMAND",
+      "version": 1,
+      "state": {
+        "demand_A": 120,
+        "equilibrium_price": 25,
+        "equilibrium_quantity": 70
+      },
+      "fallback": {
+        "kind": "static",
+        "ref": "local_demo_snapshot"
+      }
+    },
+    {
+      "id": "b04",
+      "kind": "table",
+      "type": "table.data",
+      "data": {
+        "source": "demo_dataset",
+        "status": "synthetic"
+      }
+    },
+    {
+      "id": "b05",
+      "kind": "evidence",
+      "type": "cite.ref",
+      "evidence": [],
+      "data": {
+        "review": "requires_verification"
+      }
+    },
+    {
+      "id": "b06",
+      "kind": "layout",
+      "type": "layout.section",
+      "data": {
+        "children": [
+          "b03",
+          "b04",
+          "b05"
+        ]
+      }
+    }
+  ],
+  "authority_note": "blocks.json is an exchange projection, not a second document authority",
+  "validity": "concept_prototype_only"
+}
