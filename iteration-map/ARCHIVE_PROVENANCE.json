@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "title": "蜂巢引擎 产品能力与原型设计迭代图谱",
+    "date": "2026-10-22",
+    "preview": "actual historical HTML, not screenshots",
+    "version": "1.0",
+    "warning": "Earlier HTML prototypes retained as historical files. Models and backends not implied to be connected."
+  },
+  "files": [
+    {
+      "path": "archive/App_Collaboration_Workbench_Concept_V12.html",
+      "bytes": 26348,
+      "sha256": "5ad5cad20a566e4f52a9efcc50732c8cbf736b98365c45f653e5f12dd3c60f7c"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.4.html",
+      "bytes": 282854,
+      "sha256": "89b3424378dabe98024c777f29b5cc9e983c0b6e1ca02ae3b2fefe8dc4c2c752"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.5_GeoBridge.html",
+      "bytes": 309265,
+      "sha256": "d3eac295d1e789e2741aff115ee352af7a82ae75f0bff97991631f0e6ad56312"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.6_APLE_ANTR.html",
+      "bytes": 343695,
+      "sha256": "2087054fa37cc4077ff16ff1f311dcd2d4b69737e457a8ce6cde7f1f9ed8df22"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.7_VisualPromptBuilder.html",
+      "bytes": 386481,
+      "sha256": "ef7951cffcd75982ef4f22cf266b63deffab3d464073e5c800d75bec47289c32"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.8_AppHost.html",
+      "bytes": 402504,
+      "sha256": "a2f895cf06bfc380a219ed91f877a05172ab29602049f6efc08d50b73af81be0"
+    },
+    {
+      "path": "archive/HiveEngine_Desktop_Concept_v0.9_AppCollab.html",
+      "bytes": 439350,
+      "sha256": "9e3d5ab244736ccedab3cbddca2cf39a5dd16affda95ff7718442ab5fbaf4fff"
+    },
+    {
+      "path": "archive/Policy_Research_Workbench_Concept_V11.html",
+      "bytes": 42694,
+      "sha256": "97c9aa10c7db284b9d173c0ed812a4732dc1347bac1baf95966f19bdd845813d"
+    },
+    {
+      "path": "archive/Professional_Production_WebUI.html",
+      "bytes": 132386,
+      "sha256": "7bda521aff3606294e7f93253c7641f42ded7b187b2ebbcd7817a3bb0b353e98"
+    },
+    {
+      "path": "archive/collab.html",
+      "bytes": 26348,
+      "sha256": "5ad5cad20a566e4f52a9efcc50732c8cbf736b98365c45f653e5f12dd3c60f7c"
+    },
+    {
+      "path": "archive/d01.html",
+      "bytes": 118107,
+      "sha256": "cc2bf8dd68e2f97fd648f4b69553f12917a72b7803235074a2b97fe680ba8858"
+    },
+    {
+      "path": "archive/d02.html",
+      "bytes": 146510,
+      "sha256": "edcde0d77f609a23766dcf468547a7e4b4f4a52d2e229138179c8d33868aebc4"
+    },
+    {
+      "path": "archive/d03.html",
+      "bytes": 178045,
+      "sha256": "a6057cc9dda697ccb56def2d9f691d019b9dffd69a36ebbef754652b91ecf791"
+    },
+    {
+      "path": "archive/d04.html",
+      "bytes": 282854,
+      "sha256": "89b3424378dabe98024c777f29b5cc9e983c0b6e1ca02ae3b2fefe8dc4c2c752"
+    },
+    {
+      "path": "archive/d05.html",
+      "bytes": 309265,
+      "sha256": "d3eac295d1e789e2741aff115ee352af7a82ae75f0bff97991631f0e6ad56312"
+    },
+    {
+      "path": "archive/d06.html",
+      "bytes": 343695,
+      "sha256": "2087054fa37cc4077ff16ff1f311dcd2d4b69737e457a8ce6cde7f1f9ed8df22"
+    },
+    {
+      "path": "archive/d07.html",
+      "bytes": 386481,
+      "sha256": "ef7951cffcd75982ef4f22cf266b63deffab3d464073e5c800d75bec47289c32"
+    },
+    {
+      "path": "archive/d08.html",
+      "bytes": 402504,
+      "sha256": "a2f895cf06bfc380a219ed91f877a05172ab29602049f6efc08d50b73af81be0"
+    },
+    {
+      "path": "archive/d09.html",
+      "bytes": 439350,
+      "sha256": "9e3d5ab244736ccedab3cbddca2cf39a5dd16affda95ff7718442ab5fbaf4fff"
+    },
+    {
+      "path": "archive/policy.html",
+      "bytes": 42694,
+      "sha256": "97c9aa10c7db284b9d173c0ed812a4732dc1347bac1baf95966f19bdd845813d"
+    },
+    {
+      "path": "archive/v10.html",
+      "bytes": 2309222,
+      "sha256": "dfba4fb88e95785b6cb2d76df4d86a7c0d3fb98238e5abea549ee91bd8d951bb"
+    },
+    {
+      "path": "archive/v11.html",
+      "bytes": 2319534,
+      "sha256": "73f257c31c1bf377ebb573e76d7428eb742c5b52bf972e06c17fa4f0e4912d97"
+    },
+    {
+      "path": "archive/v12.html",
+      "bytes": 2357326,
+      "sha256": "c170551f0c589a62b3d977dc4d32e969cda6057220c0897644b919060223646f"
+    },
+    {
+      "path": "archive/v4.html",
+      "bytes": 2024404,
+      "sha256": "f5d4b966440a75f11f5eae752e5073ddd985fa17b3aa1d390d0ff7b3f919669e"
+    },
+    {
+      "path": "archive/v5.html",
+      "bytes": 2073268,
+      "sha256": "2953c49741538147d54f8789f50f2f909ab43c7e677f1f10818353e1a426d10f"
+    },
+    {
+      "path": "archive/v6.html",
+      "bytes": 2098328,
+      "sha256": "307975c4d4b4efd4178d19dca9cbdefc28e4507a42cdf8b771a5ffaaf3204809"
+    },
+    {
+      "path": "archive/v7.html",
+      "bytes": 2129985,
+      "sha256": "e85bb630ac560464719557e6e641c2ac7dfc308f4af2acae1a8fafbdc58e07c4"
+    },
+    {
+      "path": "archive/v8.html",
+      "bytes": 2198896,
+      "sha256": "21766017bbce669f8f3f7d9af9d32d82f41cb59b0365548230b38b30494607f8"
+    },
+    {
+      "path": "archive/v8aple.html",
+      "bytes": 2263070,
+      "sha256": "20ca8d2e743eab851a0569e92f1652c06056a6a0bad014eca98475cf5602c930"
+    },
+    {
+      "path": "archive/v8geo.html",
+      "bytes": 2221667,
+      "sha256": "33fef79e81f3b8556d26bd3a0bf4ebf045acc831dde6e9ff0cca1c10d0545ed7"
+    },
+    {
+      "path": "archive/v8rich.html",
+      "bytes": 2176813,
+      "sha256": "e0c15ef409969c5788da24ffe1d1a20f909d51170afaa1a5790b51cc4aed05a1"
+    },
+    {
+      "path": "archive/v9.html",
+      "bytes": 2305285,
+      "sha256": "233dba3bd2a703b287bb0df0ca5065048a80600f156b3f70d3f700849c796449"
+    }
+  ]
+}
