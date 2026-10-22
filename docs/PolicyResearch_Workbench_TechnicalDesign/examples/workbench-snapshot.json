@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "snapshot_seq": 7,
+  "task": {
+    "id": "11111111-1111-4111-8111-111111111111",
+    "workspace_id": "22222222-2222-4222-8222-222222222222",
+    "project_id": null,
+    "title": "土地储备制度研究（演示）",
+    "question": "土地储备与集中供应机制之间有何关系？",
+    "jurisdiction": [
+      "中国大陆"
+    ],
+    "policy_as_of_date": "2026-10-22",
+    "profile_id": "policy-deep-research",
+    "profile_version": "2.0.0",
+    "status": "running",
+    "revision": 3,
+    "current_stage_run_id": "44444444-4444-4444-8444-444444444444",
+    "active_attempt_id": "33333333-3333-4333-8333-333333333333",
+    "last_event_seq": 7,
+    "budget": {
+      "max_model_calls": 20,
+      "max_tool_calls": 70,
+      "max_cost_usd": 10.0,
+      "deadline_at": null
+    },
+    "created_at": "2026-10-22T05:55:00+00:00",
+    "updated_at": "2026-10-22T05:55:00+00:00"
+  },
+  "attempt": {
+    "id": "33333333-3333-4333-8333-333333333333",
+    "task_id": "11111111-1111-4111-8111-111111111111",
+    "attempt_no": 1,
+    "status": "running",
+    "fence_token": 1,
+    "lease_owner": "runner-01",
+    "lease_expires_at": "2026-10-22T06:00:00+00:00",
+    "runner_type": "langgraph",
+    "runner_thread_id": "thread-policy-demo",
+    "checkpoint_ref": "lg:checkpoint:demo-1",
+    "started_at": "2026-10-22T05:55:00+00:00",
+    "ended_at": null
+  },
+  "stages": [
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "task_id": "11111111-1111-4111-8111-111111111111",
+      "attempt_id": "33333333-3333-4333-8333-333333333333",
+      "key": "analyze",
+      "title": "制度机制研究",
+      "status": "running",
+      "gate": "automatic",
+      "started_at": "2026-10-22T05:55:00+00:00",
+      "ended_at": null,
+      "blocker_code": null
+    }
+  ],
+  "evidence": {
+    "sources": [
+      {
+        "id": "55555555-5555-4555-8555-555555555555",
+        "workspace_id": "22222222-2222-4222-8222-222222222222",
+        "title": "演示政策资料 A（非真实文件）",
+        "origin": "upload",
+        "canonical_uri": null,
+        "issuer": null,
+        "doc_number": null,
+        "created_at": "2026-10-22T05:55:00+00:00"
+      }
+    ],
+    "versions": [
+      {
+        "id": "66666666-6666-4666-8666-666666666666",
+        "source_id": "55555555-5555-4555-8555-555555555555",
+        "version_label": "演示版",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "retrieved_at": "2026-10-22T05:55:00+00:00",
+        "issued_at": null,
+        "effective_from": null,
+        "effective_until": null,
+        "validity_as_of": null,
+        "validity_status": "unknown",
+        "validity_checked_at": null,
+        "validity_basis_evidence_id": null,
+        "parser_version": "demo",
+        "index_version": null,
+        "page_count": 1,
+        "extraction_status": "complete",
+        "object_ref": "objects/demo-source-A"
+      }
+    ],
+    "items": [
+      {
+        "id": "77777777-7777-4777-8777-777777777777",
+        "task_id": "11111111-1111-4111-8111-111111111111",
+        "source_version_id": "66666666-6666-4666-8666-666666666666",
+        "anchor": {
+          "kind": "pdf",
+          "page_index": 0,
+          "bbox": null,
+          "text_start": 0,
+          "text_end": 18
+        },
+        "excerpt": "演示占位文本，不构成任何真实政策依据。",
+        "excerpt_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "extraction_method": "native_text",
+        "fidelity": "needs_review",
+        "recorded_at": "2026-10-22T05:55:00+00:00",
+        "recorded_by": "agent"
+      }
+    ],
+    "claims": [
+      {
+        "id": "88888888-8888-4888-8888-888888888888",
+        "task_id": "11111111-1111-4111-8111-111111111111",
+        "kind": "interpretation",
+        "status": "proposed",
+        "current_revision_id": "99999999-9999-4999-8999-999999999999",
+        "owner_stage_run_id": "44444444-4444-4444-8444-444444444444",
+        "created_at": "2026-10-22T05:55:00+00:00"
+      }
+    ],
+    "claim_revisions": [
+      {
+        "id": "99999999-9999-4999-8999-999999999999",
+        "claim_id": "88888888-8888-4888-8888-888888888888",
+        "revision_no": 1,
+        "statement": "土地集中供应可能影响土地上市节奏（研究假设）",
+        "explanation": "仅为界面样例；尚未找到足够的有效政策证据。",
+        "assumptions": [
+          "地方政府有供应调控权"
+        ],
+        "limitations": [
+          "演示资料不能作为真实证据"
+        ],
+        "authored_by": "agent",
+        "created_at": "2026-10-22T05:55:00+00:00"
+      }
+    ],
+    "claim_links": [
+      {
+        "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+        "claim_revision_id": "99999999-9999-4999-8999-999999999999",
+        "evidence_id": "77777777-7777-4777-8777-777777777777",
+        "relation": "context",
+        "rationale": "仅作演示关联，不支持该论点。",
+        "assessment": "unreviewed"
+      }
+    ],
+    "coverage": [
+      {
+        "key": "mechanism",
+        "title": "制度作用机制",
+        "assessment": "insufficient",
+        "supporting_source_count": 0,
+        "evidence_count": 0,
+        "gaps": [
+          "缺少真实的规范依据和历史材料"
+        ]
+      }
+    ]
+  },
+  "recent_events": [
+    {
+      "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "task_id": "11111111-1111-4111-8111-111111111111",
+      "attempt_id": "33333333-3333-4333-8333-333333333333",
+      "seq": 7,
+      "occurred_at": "2026-10-22T05:55:00+00:00",
+      "type": "claim.proposed",
+      "title": "提出待验证的制度机制假设",
+      "summary": "该假设尚无真实证据支持。",
+      "actor": "agent",
+      "stage_run_id": "44444444-4444-4444-8444-444444444444",
+      "trace_id": "trace-demo",
+      "span_id": "span-demo",
+      "ref_ids": [
+        "88888888-8888-4888-8888-888888888888"
+      ],
+      "payload": {
+        "claim_id": "88888888-8888-4888-8888-888888888888",
+        "revision_id": "99999999-9999-4999-8999-999999999999"
+      }
+    }
+  ],
+  "health": {
+    "heartbeat_at": "2026-10-22T05:55:00+00:00",
+    "active_tool": null,
+    "model_calls": 2,
+    "tool_calls": 4,
+    "failed_calls": 0,
+    "total_estimated_cost_usd": 0.14,
+    "review_blockers": [
+      "待补充官方原文"
+    ],
+    "source_parse_failures": 0
+  },
+  "artifacts": []
+}

@@ -1,0 +1,30 @@
+{
+  "README.md": {
+    "bytes": 35688,
+    "sha256": "01d52202a9ef409b07bbb0149414df18d0208397172e4f3ebbebed5ceb220a90"
+  },
+  "backend/models.py": {
+    "bytes": 7394,
+    "sha256": "0f5fe529f1c56e35387f1b4b4c09a1a8f91b326b0b75451e98a66c891a6440dc"
+  },
+  "frontend/live-sync.ts": {
+    "bytes": 4724,
+    "sha256": "c65a111e371fe7008f6eefeaabcd8c6f6d282cfb8640081dd4d4cedc1bb7003d"
+  },
+  "db/001_schema.sql": {
+    "bytes": 11539,
+    "sha256": "aa68258cc748a52bbcda08178a264f4a695993a8f45aef3132397f16c7adb057"
+  },
+  "examples/make_sample.py": {
+    "bytes": 4857,
+    "sha256": "f6883f61ac6c5960752330f8830f412ff7f2dd5733385bd68c0545a4b977a2eb"
+  },
+  "examples/workbench-snapshot.json": {
+    "bytes": 6454,
+    "sha256": "5203f504f8caefd1596956bb3e26a329423f7707be3a7ef213136cb5376efd8d"
+  },
+  "contracts/policy-research.ts": {
+    "bytes": 7951,
+    "sha256": "c652811568fbd45447db7d4b31e53b47557cbf022c6211b09a1956ebd5500463"
+  }
+}
