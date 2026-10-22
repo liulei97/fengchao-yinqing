@@ -1,0 +1,46 @@
+{
+  "schema": "hive.app_registry/0.1",
+  "version": "concept-2026-10-22",
+  "apps": [
+    {
+      "id": "arch-ai",
+      "name": "建筑 AI 工作台",
+      "runtime": "python-stdlib-http",
+      "entry_url": "http://127.0.0.1:8788/",
+      "path": "apps/03_WebUI",
+      "execution_mode": "external-process",
+      "ui_mode": [
+        "iframe",
+        "external-window"
+      ],
+      "data_owner": "app-local",
+      "capabilities": [
+        "prompt-library",
+        "image-pairs",
+        "comfyui-workflows"
+      ],
+      "task_core_authority": false,
+      "bridge_status": "not-implemented"
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid Flow Studio",
+      "runtime": "static-site-http",
+      "entry_url": "http://127.0.0.1:7860/",
+      "path": "apps/Mermaid_Flow_Studio",
+      "execution_mode": "external-process",
+      "ui_mode": [
+        "iframe",
+        "external-window"
+      ],
+      "data_owner": "browser-localStorage",
+      "capabilities": [
+        "mermaid-editor",
+        "svg-export",
+        "png-export"
+      ],
+      "task_core_authority": false,
+      "bridge_status": "not-implemented"
+    }
+  ]
+}
