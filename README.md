@@ -21,7 +21,7 @@
 | [`App_Collaboration_Workbench_Concept_V12.html`](https://liulei97.github.io/fengchao-yinqing/App_Collaboration_Workbench_Concept_V12.html) | App Bridge 协作原型：三案例、授权→打开→编辑回传→复核→审定、L0–L3、导出 JSON（`simulated: true`） |
 | [`HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html) | V13 桌面概念工作台——新增「规划设计分析图」侧栏，沿用 App Host / App Bridge / Policy / Geo / APLE/ANTR / Visual 工作区 |
 | [`HiveEngine_Desktop_Concept_v0.8_AppHost.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v0.8_AppHost.html) | 桌面原型 v0.8 AppHost（V13 完整包仍随附，且 Policy V11 页内入口指向它，故保留于根目录） |
-| [`iteration-map/`](https://liulei97.github.io/fengchao-yinqing/iteration-map/) | **产品能力与原型设计迭代图谱 V13**：35+ 份真实历史 HTML 原样归档（展示页 v4→v13、桌面概念 v0.4「营造师」→v1.0、各专项工作台），同屏对照任意两版，附逐文件 SHA-256 出处清单 |
+| [`iteration-map/`](https://liulei97.github.io/fengchao-yinqing/iteration-map/) | **产品能力与原型设计迭代图谱 V13**：35+ 份真实历史 HTML 原样归档（展示页 v4→v13、桌面概念 v0.4「营造师」→v1.0、各专项工作台），同屏对照任意两版，附逐文件 SHA-256 出处清单（图谱页自带标题/统计仍写「→V12」，系制作者文案未随档更新，如实保留） |
 
 部分浏览器限制 `file://` 的 iframe 嵌入，本地体验可在仓库目录起 `python -m http.server 8765 --bind 127.0.0.1` 后访问。
 
