@@ -1,59 +1,54 @@
-# 蜂巢引擎 · Personal Harness 全景产品展示（V13 · 规划设计分析图工作台）
+# 蜂巢引擎 · Personal Harness 全景产品展示（V14 · 政策规则库与项目工具包）
 
 **在线预览：<https://liulei97.github.io/fengchao-yinqing/>**
 **迭代图谱（历史版本博物馆）：<https://liulei97.github.io/fengchao-yinqing/iteration-map/>**
 
-一个统一的 Personal Harness，面向政策研究、工程咨询、国土空间规划、城市设计与建筑设计：以任务为组织单元，共享资料、证据、专业软件、模型、审查与可编辑成果。本仓库是其**全景产品展示页**——产品概念与可运行前端（示例数据），未接入真实 GIS 计算、三维地形、ArcGIS Pro、App Bridge 与 Task Core。
+一个统一的 Personal Harness，面向政策研究、工程咨询、国土空间规划、城市设计与建筑设计：以任务为组织单元，共享资料、证据、专业软件、模型、审查与可编辑成果。本仓库是其**全景产品展示页**——产品概念与可运行前端（示例数据），未接入真实 Task Core、Rule Registry 与 App Bridge 命令调用。
 
-![V13 展示页](docs/预览图片/showcase_app_collab_1600.png)
+![V14 展示页](docs/预览图片/showcase_app_collab_1600.png)
 
 ![App Bridge 协作](docs/预览图片/app_collaboration_1600.png)
 
-![桌面工作台 v1.0](docs/预览图片/desktop_app_collab_1600.png)
+![桌面工作台 v1.1](docs/预览图片/desktop_app_collab_1600.png)
 
 ## 页面导航
 
 | 页面 | 说明 |
 |---|---|
-| [`index.html`](https://liulei97.github.io/fengchao-yinqing/) | **产品展示主页**（基于 V12 页保留全部能力，新增 V13 规划设计分析图专项展区，可在页内直接操作工作台；页面自带标题沿用 V12 口径） |
-| [`Planning_Analysis_Studio_V13.html`](https://liulei97.github.io/fengchao-yinqing/Planning_Analysis_Studio_V13.html) | **规划设计分析图工作台**（独立离线 WebUI）：二维/三维图面、GeoJSON/CSV 加载、绘制标注、主题渲染、JSON/SVG/PNG 导出 |
+| [`index.html`](https://liulei97.github.io/fengchao-yinqing/) | **V14 产品展示主页**——导航新增「政策规则与工具包」；V13 分析图工作台、V12 AppBridge、V11 政策研究、应用中心、Geo/APLE/ANTR/Visual 等展区保留 |
+| [`Policy_Toolkit_Studio_V14.html`](https://liulei97.github.io/fengchao-yinqing/Policy_Toolkit_Studio_V14.html) | **政策工具包工作室**（V14 独立交互原型，离线可运行）：内嵌 V3 规则/案例/工作流元数据，装配六类候选研究组合 |
+| [`Planning_Analysis_Studio_V13.html`](https://liulei97.github.io/fengchao-yinqing/Planning_Analysis_Studio_V13.html) | 规划设计分析图工作台（独立离线 WebUI）：二维/三维图面、GeoJSON/CSV、绘制标注、主题渲染、JSON/SVG/PNG 导出 |
 | [`Policy_Research_Workbench_Concept_V11.html`](https://liulei97.github.io/fengchao-yinqing/Policy_Research_Workbench_Concept_V11.html) | V11 政策研究三面板专项工作台 |
-| [`App_Collaboration_Workbench_Concept_V12.html`](https://liulei97.github.io/fengchao-yinqing/App_Collaboration_Workbench_Concept_V12.html) | App Bridge 协作原型：三案例、授权→打开→编辑回传→复核→审定、L0–L3、导出 JSON（`simulated: true`） |
-| [`HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html) | V13 桌面概念工作台——新增「规划设计分析图」侧栏，沿用 App Host / App Bridge / Policy / Geo / APLE/ANTR / Visual 工作区 |
-| [`HiveEngine_Desktop_Concept_v0.8_AppHost.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v0.8_AppHost.html) | 桌面原型 v0.8 AppHost（V13 完整包仍随附，且 Policy V11 页内入口指向它，故保留于根目录） |
-| [`iteration-map/`](https://liulei97.github.io/fengchao-yinqing/iteration-map/) | **产品能力与原型设计迭代图谱 V13**：35+ 份真实历史 HTML 原样归档（展示页 v4→v13、桌面概念 v0.4「营造师」→v1.0、各专项工作台），同屏对照任意两版，附逐文件 SHA-256 出处清单（图谱页自带标题/统计仍写「→V12」，系制作者文案未随档更新，如实保留） |
+| [`App_Collaboration_Workbench_Concept_V12.html`](https://liulei97.github.io/fengchao-yinqing/App_Collaboration_Workbench_Concept_V12.html) | App Bridge 协作原型（授权→打开→编辑回传→复核→审定，导出 JSON 带 `simulated: true`） |
+| [`HiveEngine_Desktop_Concept_v1.1_PolicyToolkits.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v1.1_PolicyToolkits.html) | V14 桌面概念工作台——左侧「规则库 · 项目工具包」 |
+| [`HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html) / [`…v0.8_AppHost.html`](https://liulei97.github.io/fengchao-yinqing/HiveEngine_Desktop_Concept_v0.8_AppHost.html) | 桌面原型 v1.0 / v0.8（完整包随附的历史桌面版；Policy V11 页内入口指向 v0.8） |
+| [`iteration-map/`](https://liulei97.github.io/fengchao-yinqing/iteration-map/) | **产品能力与原型设计迭代图谱 V14**：真实历史 HTML 原样归档（展示页 v4→v14、桌面概念 v0.4「营造师」→v1.1、各专项工作台），同屏对照任意两版，附逐文件 SHA-256 出处清单 |
 
-部分浏览器限制 `file://` 的 iframe 嵌入，本地体验可在仓库目录起 `python -m http.server 8765 --bind 127.0.0.1` 后访问。
+## 当前版本主题：政策规则库与项目工具包
 
-## 当前版本主题：规划设计分析图工作台
-
-- **分析图工作台**（独立可运行前端）：二维/三维图面切换、GeoJSON/CSV 数据加载（`example_data/` 内附合成示例：规划地块、公共设施点位）、绘制标注、主题化渲染，成果可导出 JSON/SVG/PNG。
-- **能力保留**：V12 App Host / App Bridge 协作、V11 政策研究三面板、Geo/Pro Bridge、APLE/ANTR、Visual Prompt Builder 等展区与工作台全部保留。
-- **边界（如实声明）**：本版未接入真实 GIS 计算、三维地形、ArcGIS Pro、App Bridge 与 Task Core；历史原型页均保留原貌（早期桌面 v0.1「营造师」旧名称未改）。
+- **政策工具包工作室**：内嵌 V3 规则/案例/工作流元数据（15 项规则、20 案例、42 工作流节点的结构化摘要），展示六类候选研究工具包的装配方式；装配结果只是**候选研究组合草案**，不是行政审批工具或政策结论。
+- **边界（如实声明）**：V14 未做政策现行效力在线核验与正式审批卷宗核实；Task Core、Rule Registry、App Bridge 真实命令调用均未接通。
+- **政策规则库 V3 原始项目未入公开仓**：完整 V3 项目（FastAPI 规则引擎、政策原文、案例报告等）仅存在于完整离线包本地；V14 页面中指向 `Policy_Rules_V3/` 的入口为完整包本地功能，在线点击无效。
 
 ## 关于 `apps/` 本地运行包（未收入本仓）
 
-完整包内两个独立 WebUI（03_WebUI 建筑AI工作台 · 127.0.0.1:8788、Mermaid Flow Studio · 127.0.0.1:7860）为**本地运行形态**：含用户私有 `prompts.json`、图片与备份数据，Python 服务无法在 GitHub Pages 运行，故不入本仓。本机体验需完整包 + Python 3 运行 `START_HIVE_ENGINE.bat`（宿主 8760）。`app_registry.example.json`（应用登记示例，严格限定 localhost/127.0.0.1/[::1]）收在 `docs/`。
+完整包内两个独立 WebUI（03_WebUI 建筑AI工作台、Mermaid Flow Studio）为本地运行形态：含用户私有 `prompts.json`、图片与备份数据，Python 服务无法在 GitHub Pages 运行，故不入本仓。本机体验需完整包 + Python 3 运行 `START_HIVE_ENGINE.bat`。
 
 ## 仓库结构
 
 | 文件 | 说明 |
 |---|---|
-| `index.html` | 产品展示主页（V13 内容；发布用根入口） |
+| `index.html` | V14 产品展示主页（发布用根入口） |
+| `Policy_Toolkit_Studio_V14.html` | V14 政策工具包工作室（独立交互原型） |
+| `HiveEngine_Desktop_Concept_v1.1_PolicyToolkits.html` | V14 桌面概念工作台 |
+| `HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html` / `…v0.8_AppHost.html` | 历史桌面原型（V13 / V10 时代，完整包随附） |
 | `Planning_Analysis_Studio_V13.html` | 规划设计分析图工作台（独立离线 WebUI） |
-| `HiveEngine_Desktop_Concept_v1.0_PlanningStudio.html` | V13 桌面概念工作台 |
-| `HiveEngine_Desktop_Concept_v0.8_AppHost.html` | 桌面原型 v0.8（V13 包随附；Policy V11 页内链接指向） |
+| `Policy_Research_Workbench_Concept_V11.html`、`App_Collaboration_Workbench_Concept_V12.html` | 专项工作台原型 |
 | `example_data/` | 分析图工作台合成示例数据（规划地块 GeoJSON、公共设施点位 CSV） |
-| `iteration-map/` | 产品能力与原型迭代图谱 V13（archive/ 历史页 + independent_apps/ + 出处清单 + 架构契约） |
-| `docs/README_从这里开始_V13.md` | V13 官方说明 |
-| `docs/V13_规划设计分析图工作台_技术架构与接口契约.md` | V13 目标接口、安全与专业精度边界 |
-| `docs/PolicyResearch_Workbench_TechnicalDesign/` | 政策研究工作台技术设计包（模型 / TS 契约 / 建库脚本 / 示例） |
-| `docs/README_从这里开始_V12.md`、`docs/README_V11_升级说明.md`、`docs/V12_AppHost_AppBridge_分层设计与实施契约.md`、`docs/README_外部WebUI应用中心.md`、`docs/README_第八版产品展示与技术说明.md`、`docs/57_富组件机制迁移_依据文档.md` | 各版本官方说明与契约存档 |
-| `docs/app_registry.example.json` | 外部应用登记示例 |
-| `docs/assets/` | 各功能模块可编辑源码（rich-components / subagent-multimodel / geo-delivery / research-architecture） |
-| `docs/samples/` | 页面导出功能生成的演示 JSON 与离线 HTML 样例 |
-| `docs/预览图片/` | App Bridge / 桌面工作台演示截图 |
+| `iteration-map/` | 产品能力与原型迭代图谱 V14（archive/ 历史页 + 出处清单 + 技术契约） |
+| `docs/README_V14_从这里开始.md`、`docs/V14_政策规则资产与项目工具包体系_技术设计.md` | V14 官方说明与真实架构边界 |
+| `docs/`（其余） | V10–V13 各版说明、AppHost/AppBridge 契约、政策工作台技术设计包、模块源码 `assets/`、导出样例 `samples/`、应用登记示例 |
 
 ## 版本沿革
 
-V13（规划设计分析图工作台）← V12（AppHost/AppBridge 协作）← V11（政策研究工作台）← V10（外部应用工作区）← V9（视觉提示词工作台）← 第八版·执行路由增强 ← 第八版（富组件成果引擎）← 第七版（Subagent 多模型编排）← 第六版 ← 第五版 ← 第四版（咨询规划建筑专业深化）← 第三版（首发入库）；全部历史版本可在 `iteration-map/` 中查阅原始页面。
+V14（政策规则库与项目工具包）← V13（规划设计分析图工作台）← V12（AppHost/AppBridge 协作）← V11（政策研究工作台）← V10（外部应用工作区）← V9（视觉提示词工作台）← 第八版·执行路由增强 ← 第八版（富组件成果引擎）← 第七版（Subagent 多模型编排）← 第六版 ← 第五版 ← 第四版（咨询规划建筑专业深化）← 第三版（首发入库）；全部历史版本可在 `iteration-map/` 查阅原始页面。
